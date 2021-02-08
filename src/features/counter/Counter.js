@@ -57,7 +57,12 @@ export function Counter() {
     //   </div>
     // </div>
     <div>
-      <a href="https://www.instagram.com/bruno.jsx/" target="_blank" rel="noreferrer">Instagram</a>
+      <div>
+        <a href="https://www.instagram.com/bruno.jsx/" target="_blank" rel="noreferrer">Instagram</a>
+      </div>
+      <div>
+        <a href="https://www.linkedin.com/in/sirbruno/" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
     </div>
   );
 }
