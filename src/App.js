@@ -6,8 +6,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Counter />
-        <p>In development.</p>
+        <nav>
+          <a href="#">About Me</a>
+        </nav>
+        <div>
+          <p>Hi, my name is Bruno Pereira, and i'm a front-end engineer.</p>
+          <Counter />
+        </div>
       </header>
     </div>
   );
