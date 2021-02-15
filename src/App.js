@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <nav>
-          <a href="#">About Me</a>
+          <a href="google.com">About Me</a>
         </nav>
         <div>
           <p>Hi, my name is Bruno Pereira, and i'm a front-end engineer.</p>
