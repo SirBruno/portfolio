@@ -10,7 +10,9 @@ function App() {
           <a href="google.com">About Me</a>
         </nav>
         <div>
-          <p>Hi, my name is Bruno Pereira, and i'm a front-end engineer.</p>
+          <h1>Hi, my name is Bruno Pereira, and i'm a front-end engineer.</h1>
+          <p>My skills include HTML, CSS, React and WordPress.</p>
+          <p>Living in São Paulo, Brazil.</p>
           <Counter />
         </div>
       </header>
