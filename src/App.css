@@ -22,8 +22,3 @@ header {
   grid-template-rows: 100px 1fr;
   height: 100vh;
 }
-
-header > div {
-  display: grid;
-  align-content: center;
-}
