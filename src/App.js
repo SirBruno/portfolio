@@ -6,9 +6,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <nav>
-          <a href="google.com">About Me</a>
-        </nav>
         <div>
           <h1>Hi, my name is Bruno Pereira, and i'm a front-end engineer.</h1>
           <p>My skills include HTML, CSS, React and WordPress.</p>
