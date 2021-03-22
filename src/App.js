@@ -9,8 +9,8 @@ function App() {
         <div>
           <h1>Olá, meu nome é Bruno Pereira, e eu sou desenvolvedor web.</h1>
           <p>Mogi Mirim, SP.</p>
-          <p>WhatsApp: (19) 97115 9735.</p>
-          <Counter />
+          <p>WhatsApp: <b>(19) 97115 9735</b>.</p>
+          {/* <Counter /> */}
         </div>
       </header>
     </div>
