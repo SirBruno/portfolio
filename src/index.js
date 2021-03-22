@@ -9,17 +9,17 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <nav>
-        <Router>
+      <Router>
+        <nav>
           <Link to="/">Home</Link>
           <a href="google.com">About Me</a>
-          <Switch>
-            <Route exact path="/">
-              <App />
-            </Route>
-          </Switch>
-        </Router>
-      </nav>
+        </nav>
+        <Switch>
+          <Route exact path="/">
+            <App />
+          </Route>
+        </Switch>
+      </Router>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
