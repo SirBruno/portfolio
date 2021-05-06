@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <div>
           <h1>Hi, my name is Bruno Pereira, and i'm a frontend developer.</h1>
-          <p>Mogi Mirim, SP.</p>
+          <p>São Paulo, Brazil.</p>
           <p>WhatsApp: <b>(19) 97115 9735</b>.</p>
           <Counter />
         </div>
