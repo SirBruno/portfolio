@@ -45,4 +45,14 @@ nav {
 nav a {
   color: rgba(255,255,255,.5);
   margin: 0 10px;
+  transition: .2s;
+}
+
+nav a:hover {
+  color: #fff;
+  transition: .2s;
+}
+
+.highlightedNavLink {
+  color: #fff;
 }
