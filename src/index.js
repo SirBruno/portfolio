@@ -1,24 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import store from './app/store';
-import { Provider } from 'react-redux';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './index.css'
+import store from './app/store'
+import { Provider } from 'react-redux'
+import { BrowserRouter as Router } from 'react-router-dom'
+import Nav from './components/Nav/Nav'
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <Router>
-        <nav>
-          <Link to="/">Home</Link>
-          <a href="google.com">About Me</a>
-        </nav>
-        <Switch>
-          <Route exact path="/">
-            <App />
-          </Route>
-        </Switch>
+        <Nav />
       </Router>
     </Provider>
   </React.StrictMode>,
