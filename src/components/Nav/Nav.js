@@ -1,5 +1,5 @@
-import { Switch, Route, Link, useLocation } from 'react-router-dom'
-import App from '../../App'
+import { Link, useLocation } from 'react-router-dom'
+import styles from './Nav.module.css'
 
 export default function Nav() {
 
@@ -7,16 +7,9 @@ export default function Nav() {
   console.log(location.pathname)
 
   return (
-    <>
-      <nav>
-        <Link className={location.pathname === "/" ? "highlightedNavLink" : null} to="/">Home</Link>
-        <a href="google.com">About Me</a>
-      </nav>
-      <Switch>
-        <Route exact path="/">
-          <App />
-        </Route>
-      </Switch>
-    </>
+    <nav className={styles.Nav}>
+      <Link className={location.pathname === "/" ? styles.highlightedNavLink : null} to="/">Home</Link>
+      <a href="google.com">About Me</a>
+    </nav>
   )
 }
