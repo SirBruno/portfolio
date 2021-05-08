@@ -76,6 +76,9 @@ export function Counter() {
         <a href="https://www.linkedin.com/in/sirbruno/" target="_blank" rel="noreferrer">LinkedIn</a>
       </div>
       <div>
+        <a href="https://github.com/sirbruno" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+      <div>
         
       </div>
     </div>
