@@ -11,7 +11,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <Router>
-        <Nav />
+        {/* <Nav /> */}
         <Switch>
           <Route exact path="/">
             <App />
