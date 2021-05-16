@@ -29,3 +29,19 @@ nav a:hover {
 .highlightedNavLink {
   color: #fff;
 }
+
+.socialIcon {
+  margin: 0 5px;
+}
+
+.socialIcon i {
+  color: #fff;
+  opacity: .5;
+  transition: .3s;
+  font-size: 24px;
+}
+
+.socialIcon i:hover {
+  opacity: 1;
+  transition: .3s;
+}
