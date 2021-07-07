@@ -16,7 +16,7 @@ function App() {
       </nav>
       <header className={styles.AppHeader}>
         <div>
-          <h1>Hi, my name is Bruno Pereira, and i'm a junior developer.</h1>
+          <h1>Hi, my name is Bruno Pereira, and i'm a Marketing Analyst.</h1>
           <p>São Paulo, Brazil.</p>
           <p>Skills: <b>React.js</b> | <b>Salesforce Marketing Cloud</b></p>
           <p>
