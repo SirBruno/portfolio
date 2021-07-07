@@ -12,7 +12,7 @@ function App() {
     <div className={styles.App}>
       <nav className={styles.Nav}>
         <Link className={location.pathname === "/" ? styles.highlightedNavLink : null} to="/">Home</Link>
-        <a href="google.com">About Me</a>
+        <a href="https://www.google.com">About Me</a>
       </nav>
       <header className={styles.AppHeader}>
         <div>
