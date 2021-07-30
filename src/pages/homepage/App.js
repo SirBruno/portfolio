@@ -16,9 +16,9 @@ function App() {
       </nav>
       <header className={styles.AppHeader}>
         <div>
-          <h1>Hi, my name is Bruno Pereira, and i'm a Marketing Analyst.</h1>
+          <h1>Hi, my name is Bruno Pereira, and i'm a Frontend Developer.</h1>
           <p>São Paulo, Brazil.</p>
-          <p>Skills: <b>React.js</b> | <b>Salesforce Marketing Cloud</b></p>
+          <p>Skills: <b>React.js</b> | <b>Node.js</b></p>
           <p>
             <a className={styles.socialIcon} href="https://github.com/sirbruno" target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a>
             <a className={styles.socialIcon} href="https://www.linkedin.com/in/sirbruno" target="_blank" rel="noreferrer"><i className="fab fa-linkedin"></i></a>
