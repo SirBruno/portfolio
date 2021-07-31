@@ -9,24 +9,32 @@ function App() {
   console.log(location.pathname)
 
   return (
-    <div className={styles.App}>
-      <nav className={styles.Nav}>
-        <Link className={location.pathname === "/" ? styles.highlightedNavLink : null} to="/">Home</Link>
-        <a href="https://www.google.com">About Me</a>
-      </nav>
-      <header className={styles.AppHeader}>
+    <>
+      <div className={styles.App}>
+        <nav className={styles.Nav}>
+          <Link className={location.pathname === "/" ? styles.highlightedNavLink : null} to="/">Home</Link>
+          <a href="#aboutMe">About Me</a>
+        </nav>
+        <header className={styles.AppHeader}>
+          <div>
+            <h1>Hi, my name is Bruno Pereira, and i'm a Frontend Developer.</h1>
+            <p>São Paulo, Brazil.</p>
+            <p>Skills: <b>React.js</b></p>
+            <p>
+              <a className={styles.socialIcon} href="https://github.com/sirbruno" target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a>
+              <a className={styles.socialIcon} href="https://www.linkedin.com/in/sirbruno" target="_blank" rel="noreferrer"><i className="fab fa-linkedin"></i></a>
+            </p>
+            {/* <Counter /> */}
+          </div>
+        </header>
+      </div>
+      <section id="aboutMe">
         <div>
-          <h1>Hi, my name is Bruno Pereira, and i'm a Frontend Developer.</h1>
-          <p>São Paulo, Brazil.</p>
-          <p>Skills: <b>React.js</b></p>
-          <p>
-            <a className={styles.socialIcon} href="https://github.com/sirbruno" target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a>
-            <a className={styles.socialIcon} href="https://www.linkedin.com/in/sirbruno" target="_blank" rel="noreferrer"><i className="fab fa-linkedin"></i></a>
-          </p>
-          {/* <Counter /> */}
+          <h1>About me</h1>
+          <p>My name is Bruno, and i'm a Frontend Developer living in São Paulo, Brazil. I know a thing or two about React, though most of my professional experience has been around Digital Marketing Automation.</p>
         </div>
-      </header>
-    </div>
+      </section>
+    </>
   );
 }
 
