@@ -52,6 +52,10 @@ nav a:hover {
   padding: 100px 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @media screen and (max-width: 480px) {
 
   /* ----- HEADER ----- */

@@ -31,7 +31,7 @@ function App() {
       <section id="aboutMe" className={styles.aboutMe}>
         <div>
           <h1>About me</h1>
-          <p>My name is Bruno, and i'm a Frontend Developer living in São Paulo, Brazil. I know a thing or two about React, though most of my professional experience has been around Digital Marketing Automation.</p>
+          <p>My name is Bruno, and i'm a Frontend Developer living in São Paulo, Brazil. I know a thing or two about React, though most of my professional experience has been around Digital Marketing Automation. I've been working in the tech field for the last 3 years.</p>
         </div>
       </section>
     </>
