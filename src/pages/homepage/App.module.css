@@ -54,6 +54,15 @@ html {
   scroll-behavior: smooth;
 }
 
+.subTitle {
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: .5;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 19px;
+}
+
 @media screen and (max-width: 480px) {
 
   /* ----- HEADER ----- */
