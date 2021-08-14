@@ -54,13 +54,24 @@ html {
   scroll-behavior: smooth;
 }
 
+
+.title {
+  font-size: 48px;
+  line-height: 64px;
+  margin: 0;
+}
+
 .subTitle {
   max-width: 700px;
-  margin: 0 auto;
+  margin: 20px auto 0;
   opacity: .5;
   font-size: 14px;
   font-weight: 300;
   line-height: 19px;
+}
+
+.socialMediaIcons {
+  margin: 20px auto 0;
 }
 
 @media screen and (max-width: 480px) {
