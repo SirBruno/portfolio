@@ -29,7 +29,7 @@ nav a:hover {
 }
 
 .socialIcon {
-  margin: 0 5px;
+  margin: 0;
 }
 
 .socialIcon i {
@@ -72,6 +72,8 @@ html {
 
 .socialMediaIcons {
   margin: 20px auto 0;
+  display: inline-flex;
+  column-gap: 10px;
 }
 
 @media screen and (max-width: 480px) {
