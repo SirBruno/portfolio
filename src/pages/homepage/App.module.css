@@ -14,14 +14,19 @@ nav {
 }
 
 nav a {
-  color: rgba(255,255,255,.5);
-  margin: 0 10px;
+  color: #fff;
+  margin: 0 30px;
   transition: .2s;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: .5;
+  text-transform: uppercase;
 }
 
 nav a:hover {
   color: #fff;
   transition: .2s;
+  opacity: 1;
 }
 
 .highlightedNavLink {
