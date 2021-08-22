@@ -5,12 +5,16 @@
   background: #000;
   color: #fff;
   display: grid;
-  grid-template-rows: 60px 1fr;
+  grid-template-rows: 1fr;
 }
 
 nav {
   text-align: center;
-  position: relative;
+  position: absolute;
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 nav a {
