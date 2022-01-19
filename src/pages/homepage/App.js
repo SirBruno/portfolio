@@ -32,7 +32,9 @@ function App() {
       <section id="aboutMe" className={styles.aboutMe}>
         <div>
           <h1>About me</h1>
-          <p>My name is Bruno, and i'm a Frontend Developer living in São Paulo, Brazil. I know a thing or two about React, though most of my professional experience has been around Digital Marketing Automation. I've been working in the tech field for the last 3 years.</p>
+          <p>My name is Bruno, and I'm a Front-end Developer living in São Paulo, Brazil. I know a thing or two about React, though most of my professional experience has been around Digital Marketing Automation.</p>
+          
+          <p>I've been working in the tech field for the last 3 years, and i loved every second of it – <i>that's not true, i complained a lot</i>.</p>
         </div>
       </section>
     </>
