@@ -114,3 +114,12 @@
     flex-direction: column;
   }
 }
+
+/* CUSTOM */
+
+.subtitle {
+  font-size: 25px;
+  font-weight: 400;
+  margin: 10px 0 30px;
+  padding: 0;
+}
