@@ -13,7 +13,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>Bruno Pereira</h1>
-        <h2 className={styles.subtitle}>Web Developer...</h2>
+        <h2 className={styles.subtitle}>Web Developer</h2>
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
