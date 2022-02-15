@@ -1,0 +1,40 @@
+.title {
+  color: #fff;
+  font-size: 120px;
+  margin: 0;
+}
+
+.subtitle {
+  color: #fff;
+  font-size: 70px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.one {
+  background: #000;
+}
+
+.hero {
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  border: 2px solid red;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.hero .main {
+  padding: 100px 0;
+}
+
+.p {
+  color: #fff;
+  opacity: .5;
+  font-size: 18px;
+}
+
+.heroRight {
+  text-align: center;
+}
