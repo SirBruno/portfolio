@@ -13,10 +13,12 @@
 
 .one {
   background: #000;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 50px 1fr;
 }
 
 .hero {
-  height: 100vh;
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr;
@@ -37,4 +39,15 @@
 
 .heroRight {
   text-align: center;
+}
+
+.nav {
+  color: #fff;
+  opacity: .5;
+  font-size: 18px;
+  text-align: center;
+  display: block;
+  height: 50px;
+  display: grid;
+  align-items: center;
 }
