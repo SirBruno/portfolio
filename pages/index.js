@@ -1,14 +1,13 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Home() {
   return (
     <div>
       <Head>
         <title>Bruno Pereira</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;400;500;600;700;800;900&display=swap" rel="stylesheet" />
       </Head>
 
       <section className={styles.one}>
@@ -19,6 +18,7 @@ export default function Home() {
             <h2 className={styles.subtitle}>Web Developer</h2>
             <p className={styles.p}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
             <br />
+            <a href="https://www.google.com" target="_blank" rel="noreferrer" className={styles.heroCTA}><FontAwesomeIcon icon={faWhatsapp} size='1x'/> WhatsApp</a>
             <p className={styles.p}>-- CTA goes here --</p>
           </main>
           <div className={styles.heroRight}>
