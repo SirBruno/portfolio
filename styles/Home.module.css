@@ -51,3 +51,22 @@
   display: grid;
   align-items: center;
 }
+
+a.heroCTA {
+  width: 260px;
+  height: 60px;
+  background: #222;
+  border: none;
+  border-radius: 5px;
+  font-family: Roboto, 'sans-serif';
+  font-size: 21px;
+  color: #6A6A6A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.heroCTA svg {
+  margin-right: 5px;
+}
