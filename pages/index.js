@@ -19,7 +19,7 @@ export default function Home() {
             <p className={styles.p}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
             <br />
             <a href="https://wa.me/5519971159735" target="_blank" rel="noreferrer" className={styles.heroCTA}><FontAwesomeIcon icon={faWhatsapp} size='1x'/> WhatsApp</a>
-            <p className={styles.p}>-- CTA goes here --</p>
+            <span className={styles.whiteStripe}></span>
           </main>
           <div className={styles.heroRight}>
             <p className={styles.p}>-- image goes here --</p>

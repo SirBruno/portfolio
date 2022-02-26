@@ -22,7 +22,6 @@
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr;
-  border: 2px solid red;
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -69,4 +68,15 @@ a.heroCTA {
 
 .heroCTA svg {
   margin-right: 5px;
+}
+
+.whiteStripe::after {
+  content: '';
+  height: 4px;
+  width: 140px;
+  display: block;
+  background: #fff;
+  position: absolute;
+  bottom: 100px;
+  left: 45px;
 }
