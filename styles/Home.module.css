@@ -2,6 +2,8 @@
   color: #fff;
   font-size: 120px;
   margin: 0;
+  z-index: 1;
+  position: relative;
 }
 
 .subtitle {
@@ -9,6 +11,8 @@
   font-size: 70px;
   font-weight: 400;
   margin: 0;
+  z-index: 1;
+  position: relative;
 }
 
 .one {
@@ -34,6 +38,8 @@
   color: #fff;
   opacity: .5;
   font-size: 18px;
+  z-index: 1;
+  position: relative;
 }
 
 .heroRight {
@@ -81,11 +87,24 @@ a.heroCTA {
   position: absolute;
   bottom: 100px;
   left: 45px;
+  z-index: 1;
 }
 
 .repeatGrid {
   position: absolute;
   top: -450px;
   left: 45px;
+  z-index: 0;
+}
+
+.blackRectangle::after {
+  content: '';
+  width: 600px;
+  height: 80%;
+  display: block;
+  background: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   z-index: 0;
 }
