@@ -19,7 +19,7 @@ export default function Home() {
             <h2 className={styles.subtitle}>Web Developer</h2>
             <p className={styles.p}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
             <br />
-            <a href="https://wa.me/5519971159735" target="_blank" rel="noreferrer" className={styles.heroCTA}><FontAwesomeIcon icon={faWhatsapp} size='1x'/> WhatsApp</a>
+            <a href="https://wa.me/5519971159735" target="_blank" rel="noreferrer" className={styles.heroCTA}><FontAwesomeIcon icon={faWhatsapp} /> WhatsApp</a>
             <span className={styles.whiteStripe}></span>
             <span className={styles.repeatGrid}>
               <Image src="/repeat_grid.png" alt="repeat grid" width="689" height="1167" />
