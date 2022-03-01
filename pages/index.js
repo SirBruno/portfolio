@@ -24,6 +24,7 @@ export default function Home() {
             <span className={styles.repeatGrid}>
               <Image src="/repeat_grid.png" alt="repeat grid" width="689" height="1167" />
             </span>
+            <span className={styles.blackRectangle}></span>
           </main>
           <div className={styles.heroRight}>
             <p className={styles.p}>-- image goes here --</p>
