@@ -37,9 +37,15 @@
 .p {
   color: #fff;
   opacity: .5;
-  font-size: 18px;
+  font-size: 16px;
   z-index: 1;
   position: relative;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+.hero .main .p {
+  margin-right: 20%;
 }
 
 .heroRight {
@@ -85,7 +91,7 @@ a.heroCTA {
   display: block;
   background: #fff;
   position: absolute;
-  bottom: 100px;
+  bottom: 75px;
   left: 45px;
   z-index: 1;
 }
@@ -107,4 +113,19 @@ a.heroCTA {
   bottom: 0;
   left: 0;
   z-index: 0;
+}
+
+.heroLogos {
+  z-index: 1;
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: -50px;
+}
+
+.heroLogos > span:not(:last-child) {
+  margin-right: 45px;
+}
+
+.heroLogos img {
+  opacity: .5;
 }
