@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from "next/image"
+import HeroLogos from '../public/hero_logos.png'
 
 export default function Home() {
   return (
@@ -20,6 +21,11 @@ export default function Home() {
             <p className={styles.p}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
             <br />
             <a href="https://wa.me/5519971159735" target="_blank" rel="noreferrer" className={styles.heroCTA}><FontAwesomeIcon icon={faWhatsapp} /> WhatsApp</a>
+            <div className={styles.heroLogos}>
+              <span>
+                <Image src={HeroLogos} alt="Logos" quality="100" height="50" width="392" />
+              </span>
+            </div>
             <span className={styles.whiteStripe}></span>
             <span className={styles.repeatGrid}>
               <Image src="/repeat_grid.png" alt="repeat grid" width="689" height="1167" />
