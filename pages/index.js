@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from "next/image"
 import HeroLogos from '../public/hero_logos.png'
@@ -13,7 +13,24 @@ export default function Home() {
       </Head>
 
       <section className={styles.one}>
-        <span className={styles.nav}>-- navigation goes here --</span>
+        <span className={styles.nav}>
+          <span>
+            <a>Home</a>
+          </span>
+          <span>
+            <a>About</a>
+          </span>
+          <span>
+            <a>Work</a>
+          </span>
+          <span>
+            <a>Contact</a>
+          </span>
+          <span className={styles.navSocialMedia}>
+            <a href="https://github.com/SirBruno" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
+            <a href="https://www.linkedin.com/in/sirbruno" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a>
+          </span>
+        </span>
         <section className={styles.hero}>
           <main className={styles.main}>
             <h1 className={styles.title}>Bruno Pereira</h1>
