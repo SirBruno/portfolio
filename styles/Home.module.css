@@ -101,6 +101,13 @@ a.heroCTA {
   text-decoration: none;
   z-index: 1;
   position: relative;
+  transition: .3s;
+}
+
+a.heroCTA:hover {
+  transition: .3s;
+  background: #25D366;
+  color: #fff;
 }
 
 .heroCTA svg {
