@@ -4,6 +4,7 @@ import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-i
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from "next/image"
 import HeroLogos from '../public/hero_logos.png'
+import heroImage from '../public/bruno_img.jpg'
 
 export default function Home() {
   return (
@@ -50,7 +51,9 @@ export default function Home() {
             <span className={styles.blackRectangle}></span>
           </main>
           <div className={styles.heroRight}>
-            <p className={styles.p}>-- image goes here --</p>
+            <div style={{width: '100%', height: '650px', position: 'relative'}}>
+                <Image className={styles.heroImage} src={heroImage} alt="Bruno Pereira" quality="100" layout='fill' objectFit='contain' />
+            </div>
           </div>
         </section>
       </section>

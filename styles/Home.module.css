@@ -159,3 +159,9 @@ a.heroCTA:hover {
 .heroLogos img {
   opacity: .5;
 }
+
+.heroImage {
+  width: auto !important;
+  min-width: auto !important;
+  border-radius: 10px;
+}
