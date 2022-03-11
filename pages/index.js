@@ -58,7 +58,12 @@ export default function Home() {
           </div>
         </section>
       </section>
-
+      <section className={styles.two}>
+        <section>
+          <div>-- text goes here --</div>
+          <div>-- image goes here --</div>
+        </section>
+      </section>
     </div>
   )
 }
