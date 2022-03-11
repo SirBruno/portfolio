@@ -13,6 +13,7 @@ export default function Home() {
         <title>Bruno Pereira</title>
       </Head>
 
+      <section className={styles.wip}><span>WERK IN PROGRESS</span></section>
       <section className={styles.one}>
         <span className={styles.nav}>
           <span>
