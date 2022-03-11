@@ -176,3 +176,19 @@ a.heroCTA:hover {
   font-size: 14px;
   font-weight: 500;
 }
+
+.two {
+  background: #eee;
+  height: 100vh;
+  display: grid;
+}
+
+.two > section {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
