@@ -51,7 +51,7 @@ export default function Home() {
             </span>
             <span className={styles.blackRectangle}></span>
           </main>
-          <div className={styles.heroRight}>
+          <div className={styles.sectionRight}>
             <div style={{width: '100%', height: '650px', position: 'relative'}}>
                 <Image className={styles.heroImage} src={heroImage} alt="Bruno Pereira" quality="100" layout='fill' objectFit='contain' />
             </div>
@@ -60,8 +60,11 @@ export default function Home() {
       </section>
       <section className={styles.two}>
         <section>
-          <div>-- text goes here --</div>
-          <div>-- image goes here --</div>
+          <div>
+            <h2>About me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+          </div>
+          <div className={styles.sectionRight}>-- image goes here --</div>
         </section>
       </section>
     </div>
