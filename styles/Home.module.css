@@ -48,7 +48,7 @@
   margin-right: 20%;
 }
 
-.heroRight {
+.sectionRight {
   text-align: center;
 }
 
@@ -190,5 +190,12 @@ a.heroCTA:hover {
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
-  text-align: center;
+}
+
+.two p {
+  margin-right: 20%;
+}
+
+.two h1, .two h2, .two h3, .two h4, .two h5, .two h6 {
+  text-transform: capitalize;
 }
