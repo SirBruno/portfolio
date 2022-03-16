@@ -62,7 +62,7 @@ export default function Home() {
         <section>
           <div>
             <h2>About me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
+            <p>{"My name is Bruno, I'm 25 years old, and I'm a web developer from São Paulo, Brazil."}</p>
           </div>
           <div className={styles.sectionRight}>-- image goes here --</div>
         </section>
