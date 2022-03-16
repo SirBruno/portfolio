@@ -104,13 +104,32 @@ a.heroCTA {
   transition: .3s;
 }
 
-a.heroCTA:hover {
+a.contactCTA {
+  width: 260px;
+  height: 60px;
+  background: #333;
+  border: none;
+  border-radius: 5px;
+  font-family: Roboto, 'sans-serif';
+  font-size: 21px;
+  color: #777;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  z-index: 1;
+  position: relative;
+  transition: .3s;
+  margin: 0 auto;
+}
+
+a.heroCTA:hover, a.contactCTA:hover {
   transition: .3s;
   background: #25D366;
   color: #fff;
 }
 
-.heroCTA svg {
+.heroCTA svg, .contactCTA svg {
   margin-right: 5px;
 }
 
@@ -178,24 +197,44 @@ a.heroCTA:hover {
 }
 
 .two {
-  background: #eee;
+  background: #111;
   height: 100vh;
   display: grid;
-}
-
-.two > section {
-  display: grid;
-  align-items: center;
-  grid-template-columns: 1fr 1fr;
-  max-width: 1600px;
-  width: 100%;
-  margin: 0 auto;
+  color: #fff;
+  justify-content: center;
 }
 
 .two p {
-  margin-right: 20%;
+  opacity: .5;
+  max-width: 750px;
+  opacity: .5;
+  font-size: 16px;
+  z-index: 1;
+  position: relative;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+.two > section {
+  width: 100%;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+.two > section div {
+  display: grid;
+  align-content: center;
+  height: 100vh;
+  padding: 100px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.two > section div h2 {
+  font-size: 50px;
 }
 
 .two h1, .two h2, .two h3, .two h4, .two h5, .two h6 {
   text-transform: capitalize;
+  margin: 0;
 }

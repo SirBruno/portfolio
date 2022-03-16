@@ -52,8 +52,8 @@ export default function Home() {
             <span className={styles.blackRectangle}></span>
           </main>
           <div className={styles.sectionRight}>
-            <div style={{width: '100%', height: '650px', position: 'relative'}}>
-                <Image className={styles.heroImage} src={heroImage} alt="Bruno Pereira" quality="100" layout='fill' objectFit='contain' />
+            <div style={{ width: '100%', height: '650px', position: 'relative' }}>
+              <Image className={styles.heroImage} src={heroImage} alt="Bruno Pereira" quality="100" layout='fill' objectFit='contain' />
             </div>
           </div>
         </section>
@@ -62,9 +62,11 @@ export default function Home() {
         <section>
           <div>
             <h2>About me</h2>
-            <p>{"My name is Bruno, I'm 25 years old, and I'm a web developer from São Paulo, Brazil."}</p>
+            <p>{"My name is Bruno, I'm 25 years old, and I'm a web developer from São Paulo, Brazil. I have experience with HTML, CSS, React.js, Next.js, and WordPress. My expertise is building commercial websites using a front-end framework or a CMS."}</p>
+            <p>For me, websites are art, and they should be appreciated as such.</p>
+            <br />
+            <a href="https://wa.me/5519971159735" target="_blank" rel="noreferrer" className={styles.contactCTA}><FontAwesomeIcon icon={faWhatsapp} /> WhatsApp</a>
           </div>
-          <div className={styles.sectionRight}>-- image goes here --</div>
         </section>
       </section>
     </div>
