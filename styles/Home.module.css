@@ -66,12 +66,17 @@
   color: #fff;
   opacity: .5;
   transition: .3s;
+  text-decoration: none;
 }
 
-.nav a:hover {
+.nav a:not(.linkDisabled):hover {
   cursor: pointer;
   opacity: 1;
   transition: .3s;
+}
+
+.nav a.linkDisabled {
+  opacity: .25;
 }
 
 .nav > span:not(:last-child) {
@@ -125,8 +130,8 @@ a.contactCTA {
 
 a.heroCTA:hover, a.contactCTA:hover {
   transition: .3s;
-  background: #25D366;
-  color: #fff;
+  background: #fff;
+  color: #000;
 }
 
 .heroCTA svg, .contactCTA svg {
@@ -237,4 +242,8 @@ a.heroCTA:hover, a.contactCTA:hover {
 .two h1, .two h2, .two h3, .two h4, .two h5, .two h6 {
   text-transform: capitalize;
   margin: 0;
+}
+
+.two:nth-child(even) {
+  background: #000;
 }

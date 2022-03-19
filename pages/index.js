@@ -1,6 +1,8 @@
+import Link from 'next/link'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from "next/image"
 import HeroLogos from '../public/hero_logos.png'
@@ -17,16 +19,16 @@ export default function Home() {
       <section className={styles.one}>
         <span className={styles.nav}>
           <span>
-            <a>Home</a>
+            <a className={styles.linkDisabled}>Home</a>
           </span>
           <span>
-            <a>About</a>
+            <Link href="#About">About</Link>
           </span>
           <span>
-            <a>Work</a>
+            <a className={styles.linkDisabled}>Work</a>
           </span>
           <span>
-            <a>Contact</a>
+            <Link href="#Contact">Contact</Link>
           </span>
           <span className={styles.navSocialMedia}>
             <a href="https://github.com/SirBruno" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
@@ -39,7 +41,7 @@ export default function Home() {
             <h2 className={styles.subtitle}>Web Developer</h2>
             <p className={styles.p}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
             <br />
-            <a href="https://wa.me/5519971159735" target="_blank" rel="noreferrer" className={styles.heroCTA}><FontAwesomeIcon icon={faWhatsapp} /> WhatsApp</a>
+            <Link href="#Contact"><a className={styles.heroCTA}><FontAwesomeIcon icon={faPaperPlane} /> Contact</a></Link>
             <div className={styles.heroLogos}>
               <span>
                 <Image src={HeroLogos} alt="Logos" quality="100" height="50" width="392" />
@@ -58,14 +60,23 @@ export default function Home() {
           </div>
         </section>
       </section>
-      <section className={styles.two}>
+      <section id="About" className={styles.two}>
         <section>
           <div>
             <h2>About me</h2>
             <p>{"My name is Bruno, I'm 25 years old, and I'm a web developer from São Paulo, Brazil. I have experience with HTML, CSS, React.js, Next.js, and WordPress. My expertise is building commercial websites using a front-end framework or a CMS."}</p>
             <p>For me, websites are art, and they should be appreciated as such.</p>
             <br />
-            <a href="https://wa.me/5519971159735" target="_blank" rel="noreferrer" className={styles.contactCTA}><FontAwesomeIcon icon={faWhatsapp} /> WhatsApp</a>
+            <Link href="#Contact"><a className={styles.contactCTA}><FontAwesomeIcon icon={faPaperPlane} /> Contact</a></Link>
+          </div>
+        </section>
+      </section>
+      <section id="Contact" className={styles.two}>
+        <section>
+          <div>
+            <h2>Contact</h2>
+            <p>{"bruno.webjr@gmail.com"}<br />{"+55 (19) 97115 9735"}</p>
+            <p>{"São Paulo, Brazil."}</p>
           </div>
         </section>
       </section>
