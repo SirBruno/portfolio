@@ -75,7 +75,7 @@ export default function Home() {
         <section>
           <div>
             <h2>Contact</h2>
-            <p>{"bruno.webjr@gmail.com"}<br />{"+55 (19) 97115 9735"}</p>
+            <p>{"bruno.webjr@gmail.com"}</p>
             <p>{"São Paulo, Brazil."}</p>
           </div>
         </section>
