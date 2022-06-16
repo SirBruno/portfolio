@@ -6,7 +6,7 @@ import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from "next/image"
 import HeroLogos from '../public/hero_logos.png'
-import heroImage from '../public/bruno_img.jpg'
+import heroImage from '../public/hero_img.png'
 
 export default function Home() {
   return (
@@ -54,7 +54,7 @@ export default function Home() {
             <span className={styles.blackRectangle}></span>
           </main>
           <div className={styles.sectionRight}>
-            <div style={{ width: '100%', height: '650px', position: 'relative' }}>
+            <div style={{ width: '100%', height: '750px', position: 'relative' }}>
               <Image className={styles.heroImage} src={heroImage} alt="Bruno Pereira" quality="100" layout='fill' objectFit='contain' />
             </div>
           </div>
