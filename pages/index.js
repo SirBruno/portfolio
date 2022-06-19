@@ -38,7 +38,7 @@ export default function Home() {
         <section className={styles.hero}>
           <main className={styles.main}>
             <h1 className={styles.title}>Bruno Pereira</h1>
-            <h2 className={styles.subtitle}>Web Developer</h2>
+            <h2 className={styles.subtitle}>Web Developer<span>ウェビデベロッパー</span></h2>
             <p className={styles.p}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
             <br />
             <Link href="#Contact"><a className={styles.heroCTA}><FontAwesomeIcon icon={faPaperPlane} /> Contact</a></Link>
@@ -54,7 +54,7 @@ export default function Home() {
             <span className={styles.blackRectangle}></span>
           </main>
           <div className={styles.sectionRight}>
-            <div style={{ width: '100%', height: '750px', position: 'relative' }}>
+            <div style={{ width: '750px', height: '750px', position: 'absolute', right:'0', bottom:'0' }}>
               <Image className={styles.heroImage} src={heroImage} alt="Bruno Pereira" quality="100" layout='fill' objectFit='contain' />
             </div>
           </div>
@@ -64,7 +64,7 @@ export default function Home() {
         <section>
           <div>
             <h2>About me</h2>
-            <p>{"My name is Bruno, I'm 25 years old, and I'm a web developer from São Paulo, Brazil. I have experience with HTML, CSS, React.js, Next.js, and WordPress. My expertise is building commercial websites using a front-end framework or a CMS."}</p>
+            <p>{`My name is Bruno, I'm ${new Date().getFullYear() - 1996} years old, and I'm a web developer from São Paulo, Brazil. I have experience with HTML, CSS, React.js, Next.js, and WordPress. My expertise is building commercial websites using a front-end framework or a CMS.`}</p>
             <p>For me, websites are art, and they should be appreciated as such.</p>
             <br />
             <Link href="#Contact"><a className={styles.contactCTA}><FontAwesomeIcon icon={faPaperPlane} /> Contact</a></Link>

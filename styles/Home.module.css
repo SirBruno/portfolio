@@ -8,11 +8,17 @@
 
 .subtitle {
   color: #fff;
-  font-size: 70px;
-  font-weight: 400;
+  font-size: 60px;
+  font-weight: 300;
   margin: 0;
   z-index: 1;
   position: relative;
+}
+
+.subtitle > span {
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
 }
 
 .one {
@@ -155,6 +161,7 @@ a.heroCTA:hover, a.contactCTA:hover {
   top: -450px;
   left: 45px;
   z-index: 0;
+  opacity: .5;
 }
 
 .blackRectangle::after {
@@ -187,7 +194,6 @@ a.heroCTA:hover, a.contactCTA:hover {
 .heroImage {
   width: auto !important;
   min-width: auto !important;
-  border-radius: 10px;
 }
 
 .wip {
