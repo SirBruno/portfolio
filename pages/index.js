@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-import { faGithub, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from "next/image"
