@@ -38,7 +38,7 @@ export default function Home() {
         <section className={styles.hero}>
           <main className={styles.main}>
             <h1 className={styles.title}>Bruno Pereira</h1>
-            <h2 className={styles.subtitle}>Web Developer<span>ウェビデベロッパー</span></h2>
+            <h2 className={styles.subtitle}>Web Developer<span>ウェブデベロッパー</span></h2>
             <p className={styles.p}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.</p>
             <br />
             <Link href="#Contact"><a className={styles.heroCTA}><FontAwesomeIcon icon={faPaperPlane} /> Contact</a></Link>
