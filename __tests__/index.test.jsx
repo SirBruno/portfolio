@@ -9,8 +9,8 @@ describe('Home', () => {
   it('renders two headings', () => {
     render(<Home />)
 
-    const h1 = screen.getByRole('heading', { name: 'Bruno Pereira', })
-    const h2 = screen.getByRole('heading', { name: 'Web Developer ウェブデベロッパー', })
+    const h1 = screen.getByRole('heading', { name: 'BRUNO SILVA', })
+    const h2 = screen.getByRole('heading', { name: 'シルバブルーノ', })
 
     expect(h1).toBeInTheDocument()
     expect(h2).toBeInTheDocument()
