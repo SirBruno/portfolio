@@ -22,8 +22,8 @@ export default function Home() {
   function handleClick() {
     setLoaderOn(true)
     inspireImgs.indexOf(currImg) == inspireImgs.length - 1
-    ? setCurrImg(inspireImgs[0])
-    : setCurrImg(inspireImgs[inspireImgs.indexOf(currImg) + 1])
+      ? setCurrImg(inspireImgs[0])
+      : setCurrImg(inspireImgs[inspireImgs.indexOf(currImg) + 1])
   }
 
   return (
@@ -41,15 +41,20 @@ export default function Home() {
                 <a href="https://www.linkedin.com/in/sirbruno" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a>
               </span>
             </span>
-            <h1 className={styles.title}>BRUNO SILVA</h1>
-            <h2 className={styles.subtitle}>シルバブルーノ</h2>
-            <h1 className={styles.title2}>WEB DEVELOPER</h1>
-            <h2 className={styles.subtitle}>Webデベロッパー</h2>
-            <p className={styles.p}>{"My name is Bruno, I'm 26 years old, and I'm a web developer from São Paulo, Brazil. I know HTML, CSS, Next.js and WordPress. I'm also an expert in Marketing Automation, but that's a long story."}</p>
-            <br />
-            <Link href="#Contact"><a className={styles.heroCTA}><FontAwesomeIcon icon={faPaperPlane} /> Contact</a></Link>
+            <div className={styles.hero_left}>
+              <div>
+                <h1 className={styles.title}>BRUNO SILVA</h1>
+                <h2 className={styles.subtitle}>シルバブルーノ</h2>
+              </div>
+              <div>
+                <h1 className={styles.title2}>WEB DEVELOPER</h1>
+                <h2 className={styles.subtitle}>Webデベロッパー</h2>
+              </div>
+              <p className={styles.p}>{"My name is Bruno, I'm 26 years old, and I'm a web developer from São Paulo, Brazil. I know HTML, CSS, Next.js and WordPress. I'm also an expert in Marketing Automation, but that's a long story."}</p>
+              <Link href="#Contact"><a className={styles.contact_cta}><FontAwesomeIcon icon={faPaperPlane} /> Contact</a></Link>
+            </div>
           </main>
-          <div style={{width: '100%', height: '100%', position: 'relative'}}>
+          <div style={{ width: '100%', height: '100%', position: 'relative' }}>
             <Image alt="decorative image" onLoadingComplete={() => setLoaderOn(false)} placeholder="blur" src={currImg} layout='fill' objectFit='cover' quality={100} />
             <div className={styles.imgLoader}>
               <Grid
@@ -64,26 +69,62 @@ export default function Home() {
               />
             </div>
             <span onClick={handleClick} className={styles.inspireMe}>
-            <FontAwesomeIcon icon={faChevronRight} />Inspire me</span>
+              <FontAwesomeIcon icon={faChevronRight} />Inspire me</span>
           </div>
         </section>
       </section>
-      <section id="About" className={styles.two}>
-        <section>
+      <section className={styles.section_01}>
+        <div className={styles.content_area}>
           <div>
-            <h2>About me</h2>
-            <p>{`My name is Bruno, I'm ${new Date().getFullYear() - 1996} years old, and I'm a web developer from São Paulo, Brazil. I have experience with HTML, CSS, React.js, Next.js, and WordPress. My expertise is building commercial websites using a front-end framework or a CMS.`}</p>
-            <br />
-            <Link href="#Contact"><a className={styles.contactCTA}><FontAwesomeIcon icon={faPaperPlane} /> Contact</a></Link>
+            <div>
+              <h2>About me</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Imperdiet arcu ullamcorper eu, neque ac auctor pulvinar vel. Consectetur fermentum facilisis diam purus porttitor ipsum mauris elit aliquet. Eu at ornare vitae molestie viverra. Sem risus enim ornare nulla morbi. Neque viverra pulvinar facilisis viverra maecenas et semper lectus. Ut semper odio ultricies ullamcorper odio sed maecenas turpis rutrum. Vel integer aliquet magna odio at tincidunt. Molestie neque enim sit natoque magna a nec libero ac. Facilisis nulla ac pellentesque risus duis aliquam elit.</p>
+            </div>
+            <Link href="#Contact"><a className={styles.contact_cta}><FontAwesomeIcon icon={faPaperPlane} /> Contact</a></Link>
           </div>
-        </section>
+          <div className={styles.experience}>
+            <div>
+              <h2>Experience</h2>
+              <div className={styles.jobs}>
+                <div>
+                  <p><b>{"CRM & Marketing Automation Analyst"}</b></p>
+                  <p>Full-time · 1 yr 4 mos+</p>
+                  <p className={styles.half_opacity}>06/2021 - Present<br />São Paulo, Brazil</p>
+                </div>
+                <div>
+                  <p><b>{"Jr. Developer"}</b></p>
+                  <p>Full-time · 1 yr 2 mos</p>
+                  <p className={styles.half_opacity}>04/2020 - 05/2021<br />São Paulo, Brazil</p>
+                </div>
+                <div>
+                  <p><b>{"Web Developer"}</b></p>
+                  <p>Full-time · 1 yr 6 mos</p>
+                  <p className={styles.half_opacity}>10/2018 - 03/2020<br />São Paulo, Brazil</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2>Education</h2>
+              <div>
+                <p><b>{"FATEC"}</b></p>
+                <p>{"Associate's degree, Computer Systems Analysis"}</p>
+                <p className={styles.half_opacity}>2017 - 2020</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <section id="Contact" className={styles.two}>
         <section>
           <div>
             <h2>Contact</h2>
-            <p>{"bruno.webjr@gmail.com"}</p>
-            <p>{"São Paulo, Brazil."}</p>
+            <div>
+              <p>{"bruno.webjr@gmail.com"}</p>
+              <br />
+              <p>{"São Paulo, Brazil."}</p>
+            </div>
+            <br />
+            <span className={styles.half_opacity}>*This website is a work in progress.</span>
           </div>
         </section>
       </section>
