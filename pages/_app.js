@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Bruno Pereira | Web developer</title>
+        <title>Bruno Silva | Frontend | Next.js</title>
       </Head>
       <Component {...pageProps} />
     </>
