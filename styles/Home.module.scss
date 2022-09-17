@@ -85,34 +85,20 @@
   align-items: center;
   max-width: 1600px;
   width: 100%;
+  & .navSocialMedia > a:not(:last-child) {
+    margin-right: 15px;
+  }
 }
 
 .nav a {
   color: #000;
   transition: .3s;
   text-decoration: none;
-}
-
-.nav a:not(.linkDisabled):hover {
-  cursor: pointer;
-  opacity: .5;
-  transition: .3s;
-}
-
-.nav a.linkDisabled {
-  opacity: .25;
-}
-
-.nav > span:not(:last-child) {
-  margin-right: 50px;
-}
-
-.nav .navSocialMedia {
-  font-size: 24px;
-}
-
-.nav .navSocialMedia > a:not(:last-child) {
-  margin-right: 15px;
+  &:hover {
+    cursor: pointer;
+    opacity: .5;
+    transition: .3s;
+  }
 }
 
 .heroImage {
