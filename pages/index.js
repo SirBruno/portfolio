@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid } from 'react-loader-spinner'
 import Link from 'next/link'
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faPaperPlane, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -37,7 +37,7 @@ export default function Home() {
           <main className={styles.main}>
             <span className={styles.nav}>
               <span className={styles.navSocialMedia}>
-                <a href="https://github.com/SirBruno" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
+                <a href="https://github.com/SirBruno/portfolio" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
                 <a href="https://www.linkedin.com/in/sirbruno" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a>
               </span>
             </span>
