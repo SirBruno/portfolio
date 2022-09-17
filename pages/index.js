@@ -1,7 +1,6 @@
 import React from 'react';
 import { Grid } from 'react-loader-spinner'
 import Link from 'next/link'
-import Head from 'next/head'
 import styles from '../styles/Home.module.scss'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faPaperPlane, faChevronRight } from '@fortawesome/free-solid-svg-icons'
@@ -28,10 +27,6 @@ export default function Home() {
 
   return (
     <div>
-      <Head>
-        <title>Bruno Pereira</title>
-      </Head>
-
       <section className={styles.one}>
         <section className={styles.hero}>
           <main className={styles.main}>
