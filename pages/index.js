@@ -2,7 +2,7 @@ import React from 'react';
 import { Grid } from 'react-loader-spinner'
 import Link from 'next/link'
 import styles from '../styles/Home.module.scss'
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin, faFigma } from '@fortawesome/free-brands-svg-icons'
 import { faPaperPlane, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Image from "next/image"
@@ -33,19 +33,20 @@ export default function Home() {
             <span className={styles.nav}>
               <span className={styles.navSocialMedia}>
                 <a href="https://github.com/SirBruno/portfolio" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
+                <a href="https://www.figma.com/file/oA2teARK09CiucW27OqRtS/Portfolio?node-id=0%3A1" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faFigma} /></a>
                 <a href="https://www.linkedin.com/in/sirbruno" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a>
               </span>
             </span>
-            <div className={styles.hero_left}>
+            <div className={styles.hero__left}>
               <div>
-                <h1 className={styles.title}>BRUNO SILVA</h1>
-                <h2 className={styles.subtitle}>シルバブルーノ</h2>
+                <h1>BRUNO SILVA</h1>
+                <h4>シルバブルーノ</h4>
               </div>
               <div>
-                <h1 className={styles.title2}>WEB DEVELOPER</h1>
-                <h2 className={styles.subtitle}>Webデベロッパー</h2>
+                <h3>WEB DEVELOPER</h3>
+                <h4>Webデベロッパー</h4>
               </div>
-              <p className={styles.p}>{"My name is Bruno, I'm 26 years old, and I'm a web developer from São Paulo, Brazil. I know HTML, CSS, Next.js and WordPress. I'm also an expert in Marketing Automation, but that's a long story."}</p>
+              <h4 className={styles.hero__intro}>{`My name is Bruno, I'm 26 years old, and I'm a web developer from São Paulo, Brazil. I know my way around Next.js, with the help of Sass and other web technologies.`}</h4>
               <Link href="#Contact"><a className={styles.contact_cta}><FontAwesomeIcon icon={faPaperPlane} /> Contact</a></Link>
             </div>
           </main>
@@ -73,7 +74,10 @@ export default function Home() {
           <div>
             <div>
               <h2>About me</h2>
-              <p>{`The year was 2018, I started my career as a web developer at a small digital agency in São Paulo, Brazil. It was then that I realized that learning HTML and CSS when I was 15 wasn't a waste of time after all. Building websites for small businesses was really fun, but after one and a half years doing that, I started to feel like something wasn't right. The job was relatively easy; the designer would send me an image of how the website was supposed to look like, and my job was to build the actual website using WordPress... with a “page builder”. Anyone could do that, even a monkey... probably even a ra- my point is, it was EASY, and so my salary wasn't that great. I was concerned about my future – I mean, bills were not getting any cheaper, and at the same time, I wasn't getting any younger. Fast-forward to today, I work as a Marketing Automation Analyst for one of the biggest digital agencies in the world, and I get paid... uhh... relatively well, if you know what I mean. When I was 15, it wasn't my dream to do Marketing Automation for a living – I'm pretty sure 15-year-old me would punch me in the face if he saw me today –, but as they say, “life is like the weather”, it's unpredictable. Still, even though sometimes life does confusing sh*t, I think that that's the beauty of it. If we always knew what was gonna happen next, life would be pretty boring.`}</p>
+              <p>{`The year was 2018, I started my career as a web developer at a small digital agency in São Paulo, Brazil. It was then that I realized that learning HTML and CSS when I was 15 wasn't a waste of time after all.`}</p>
+              <p>{`Building websites for small businesses was really fun, but after one and a half years doing that, I started to feel like something wasn't right. The job was relatively easy; the designer would send me an image of how the website was supposed to look like, and my job was to build the actual website using WordPress... with a “page builder”. Anyone could do that, even a monkey... probably even a ra- my point is, it was EASY, and so my salary wasn't that great.`}</p>
+              <p>{`I was concerned about my future – I mean, bills were not getting any cheaper, and at the same time, I wasn't getting any younger. Fast-forward to today, I work as a Marketing Automation Analyst for one of the biggest digital agencies in the world, and I get paid... uhh... relatively well, if you know what I mean.`}</p>
+              <p>{`When I was 15, it wasn't my dream to do Marketing Automation for a living – I'm pretty sure 15-year-old me would punch me in the face if he saw me today –, but as they say, “life is like the weather”, it's unpredictable. Still, even though sometimes life does confusing sh*t, I think that that's the beauty of it. If we always knew what was gonna happen next, life would be pretty boring.`}</p>
             </div>
             <Link href="#Contact"><a className={styles.contact_cta}><FontAwesomeIcon icon={faPaperPlane} /> Contact</a></Link>
           </div>
@@ -119,7 +123,7 @@ export default function Home() {
               <p>{"São Paulo, Brazil."}</p>
             </div>
             <br />
-            <span className={styles.half_opacity}>*This website is a work in progress.</span>
+            <span className={styles.half_opacity}>*This website is a work in progress... just like my life.</span>
           </div>
         </section>
       </section>
