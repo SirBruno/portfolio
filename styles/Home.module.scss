@@ -1,44 +1,3 @@
-.title {
-  color: #000;
-  font-size: max(24px, 5vw);
-  line-height: max(24px, 5vw);
-  margin: 0;
-  z-index: 1;
-  position: relative;
-  font-weight: bold;
-}
-
-.title2 {
-  color: #000;
-  font-size: max(24px, 1.8vw);
-  line-height: normal;
-  margin: 0;
-  z-index: 1;
-  position: relative;
-  font-weight: bold;
-}
-
-.subtitle {
-  color: #000;
-  font-size: max(24px, 1.2vw);;
-  line-height: normal;
-  font-weight: 400;
-  margin: 0;
-  z-index: 1;
-  position: relative;
-}
-
-.hero .p {
-  font-size: 24px;
-  color: #000;
-}
-
-.subtitle > span {
-  font-size: 18px;
-  font-weight: bold;
-  display: block;
-}
-
 .one {
   background: #F3E4C7;
   min-height: 100vh;
@@ -51,6 +10,9 @@
   grid-template-columns: repeat(auto-fit, minmax(512px, 1fr));
   margin: 0 auto;
   height: 100vh;
+  & .hero__intro {
+    margin-right: 15%;
+  }
 }
 
 .hero > div {
@@ -59,17 +21,6 @@
 
 .hero .main {
   padding: 10%;
-}
-
-.p {
-  color: #fff;
-  font-size: 16px;
-  z-index: 1;
-  position: relative;
-}
-
-.hero .main .p {
-  margin-right: 15%;
 }
 
 .sectionRight {
@@ -106,11 +57,7 @@
   min-width: auto !important;
 }
 
-.hero_left p {
-  margin: 0;
-}
-
-.hero_left {
+.hero__left {
   display: grid;
   grid-row-gap: 40px;
 }
@@ -187,14 +134,6 @@
   height: 100vh;
 }
 
-.two p {
-  font-size: 24px;
-  z-index: 1;
-  position: relative;
-  line-height: normal;
-  margin: 0;
-}
-
 .two > section {
   width: 100%;
   margin: 0 auto;
@@ -208,15 +147,6 @@
   box-sizing: border-box;
   text-align: center;
   grid-row-gap: 40px;
-}
-
-.two > section div h2 {
-  font-size: 50px;
-}
-
-.two h1, .two h2, .two h3, .two h4, .two h5, .two h6 {
-  text-transform: capitalize;
-  margin: 0;
 }
 
 .two:nth-child(even) {
@@ -234,19 +164,14 @@
   grid-row-gap: 40px;
 }
 
-.section_01 h2,
-.section_01 p {
-  margin: 0;
+.section_01 .experience > div {
+  display: grid;
+  grid-row-gap: 20px;
 }
 
-.section_01 h2 {
-  font-size: 48px;
-  line-height: 100px;
-}
-
-.section_01 p {
-  font-size: 24px;
-  line-height: normal;
+.section_01 .content_area > div:first-child > div {
+  display: grid;
+  grid-row-gap: 20px;
 }
 
 .contact_cta {
@@ -307,6 +232,9 @@
 
   .hero .main {
     padding: 0;
+    & .hero__intro {
+      margin: 0;
+    }
   }
 
   .hero,
@@ -315,10 +243,6 @@
     padding: 10%;
     box-sizing: border-box;
     grid-row-gap: 40px;
-  }
-
-  .hero .main .p {
-    margin-right: 0;
   }
 
   .section_01 {
