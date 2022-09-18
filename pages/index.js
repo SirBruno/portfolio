@@ -123,7 +123,7 @@ export default function Home() {
               <p>{"São Paulo, Brazil."}</p>
             </div>
             <br />
-            <span className={styles.half_opacity}>*This website is a work in progress... just like my life.</span>
+            <span className={styles.half_opacity}>*This website is a work in progress, just like my life.</span>
           </div>
         </section>
       </section>
