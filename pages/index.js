@@ -1,29 +1,11 @@
 import React from 'react';
-import { Grid } from 'react-loader-spinner'
-import Link from 'next/link'
 import styles from '../styles/Home.module.scss'
 import { faGithub, faLinkedin, faFigma } from '@fortawesome/free-brands-svg-icons'
-import { faPaperPlane, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Image from "next/image"
-import inspireImg1 from '../public/4c41A6Sjvog.jpg'
-import inspireImg2 from '../public/4eOTdeNPBRw.jpg'
-import inspireImg3 from '../public/40KHzWGMJnY.jpg'
-import inspireImg4 from '../public/1427134853.jpg'
-import inspireImg5 from '../public/KaM0WN8tqBI.jpg'
+import Button from '../components/Button.js'
+import ImageReel from '../components/ImageReel.js'
 
 export default function Home() {
-
-  let inspireImgs = [inspireImg1, inspireImg2, inspireImg3, inspireImg4, inspireImg5]
-  const [currImg, setCurrImg] = React.useState(inspireImg1);
-  const [loaderOn, setLoaderOn] = React.useState(false);
-
-  function handleClick() {
-    setLoaderOn(true)
-    inspireImgs.indexOf(currImg) == inspireImgs.length - 1
-      ? setCurrImg(inspireImgs[0])
-      : setCurrImg(inspireImgs[inspireImgs.indexOf(currImg) + 1])
-  }
 
   return (
     <div>
@@ -47,26 +29,10 @@ export default function Home() {
                 <h4>Webデベロッパー</h4>
               </div>
               <h4 className={styles.hero__intro}>{`My name is Bruno, I'm 26 years old, and I'm a web developer from São Paulo, Brazil. I know my way around Next.js, with the help of Sass and other web technologies.`}</h4>
-              <Link href="#Contact"><a className={styles.contact_cta}><FontAwesomeIcon icon={faPaperPlane} /> Contact</a></Link>
+              <Button style="big" />
             </div>
           </main>
-          <div style={{ width: '100%', height: '100%', position: 'relative' }}>
-            <Image alt="decorative image" onLoadingComplete={() => setLoaderOn(false)} placeholder="blur" src={currImg} layout='fill' objectFit='cover' quality={100} />
-            <div className={styles.imgLoader}>
-              <Grid
-                height="120"
-                width="120"
-                color="#000"
-                ariaLabel="grid-loading"
-                radius="12.5"
-                wrapperStyle={{}}
-                wrapperClass=""
-                visible={loaderOn}
-              />
-            </div>
-            <span onClick={handleClick} className={styles.inspireMe}>
-              <FontAwesomeIcon icon={faChevronRight} />Inspire me</span>
-          </div>
+          <ImageReel />
         </section>
       </section>
       <section className={styles.section_01}>
@@ -79,7 +45,7 @@ export default function Home() {
               <p>{`I was concerned about my future – I mean, bills were not getting any cheaper, and at the same time, I wasn't getting any younger. Fast-forward to today, I work as a Marketing Automation Analyst for one of the biggest digital agencies in the world, and I get paid... uhh... relatively well, if you know what I mean.`}</p>
               <p>{`When I was 15, it wasn't my dream to do Marketing Automation for a living – I'm pretty sure 15-year-old me would punch me in the face if he saw me today –, but as they say, “life is like the weather”, it's unpredictable. Still, even though sometimes life does confusing sh*t, I think that that's the beauty of it. If we always knew what was gonna happen next, life would be pretty boring.`}</p>
             </div>
-            <Link href="#Contact"><a className={styles.contact_cta}><FontAwesomeIcon icon={faPaperPlane} /> Contact</a></Link>
+            <Button style="regular" />
           </div>
           <div className={styles.experience}>
             <div>

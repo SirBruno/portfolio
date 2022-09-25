@@ -1,0 +1,42 @@
+.imgLoader {
+  position: absolute;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+}
+
+@keyframes moveBtn { 
+  from {
+    margin-left: -10px;
+  } 
+  to {
+    margin-left: 0;
+  }
+}
+
+.inspireMe {
+  background: #000;
+  color: #fff;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  padding: 10px 25px;
+  border-radius: 100px;
+  transition: .2s;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+  &:active {
+    animation: .1s ease moveBtn;
+  }
+  & svg {
+    font-size: 10px;
+    margin-right: 5px;
+  }
+}
