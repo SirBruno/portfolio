@@ -86,7 +86,6 @@ export default function Home() {
             <div>
               <p>{"bruno.webjr@gmail.com"}</p>
               <br />
-              <p>{"Tokyo, Japan."}</p>
             </div>
             <br />
             <span className={styles.half_opacity}>*This website is a work in progress, just like my life.</span>
