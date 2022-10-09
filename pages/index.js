@@ -28,7 +28,7 @@ export default function Home() {
                 <h3>WEB DEVELOPER</h3>
                 <h4>Webデベロッパー</h4>
               </div>
-              <h4 className={styles.hero__intro}>{`My name is Bruno, I'm 26 years old, and I'm a web developer from São Paulo, Brazil. I know my way around Next.js, with the help of Sass and other web technologies.`}</h4>
+              <h4 className={styles.hero__intro}>{`My name is Bruno, I'm 26 years old, and I'm a web developer from Brazil, currently living in Tokyo. I know my way around Next.js, with the help of Sass and other web technologies.`}</h4>
               <Button style="big" />
             </div>
           </main>
@@ -86,7 +86,7 @@ export default function Home() {
             <div>
               <p>{"bruno.webjr@gmail.com"}</p>
               <br />
-              <p>{"São Paulo, Brazil."}</p>
+              <p>{"Shibuya-ku, Tokyo, Japan."}</p>
             </div>
             <br />
             <span className={styles.half_opacity}>*This website is a work in progress, just like my life.</span>
