@@ -79,6 +79,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className={styles.skills}>
+        <h2 className={styles.skills__title}>
+          Skills (WIP)
+        </h2>
+      </section>
       <section id="Contact" className={styles.two}>
         <section>
           <div>
