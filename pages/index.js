@@ -94,7 +94,7 @@ export default function Home() {
               <p>{"Tokyo, Japan."}</p>
             </div>
             <br />
-            <span className={styles.half_opacity}>*This website is a work in progress, just like my life.</span>
+            <span className={styles.half_opacity}>This website is a work in progress.</span>
           </div>
         </section>
       </section>
