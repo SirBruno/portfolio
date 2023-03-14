@@ -43,7 +43,7 @@ export default function Home() {
           <div>
             <h2>Contato</h2>
             <div>
-              <p><a href="https://transluzviagens.com.br" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faWhatsapp} /> WhatsApp</a></p>
+              <p><a href="https://wa.me/5519971159735" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faWhatsapp} /> WhatsApp</a></p>
               <br />
               <h4><b>(19) 97115 9735</b></h4>
               <p>WhatsApp apenas!</p>
