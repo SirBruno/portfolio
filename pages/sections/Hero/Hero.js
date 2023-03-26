@@ -1,7 +1,5 @@
 import React from 'react';
 import styles from '../Hero/Hero.module.scss'
-import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Button from '../../../components/Button'
 import Image from "next/image"
 import heroImage from '../../../public/hero-image.svg'
@@ -16,9 +14,9 @@ export default function Hero() {
               <h1>BRUNO SILVA</h1>
             </div>
             <div>
-              <h3><span style={{borderBottom: '4px solid #ff5678'}}>Desenvolvedor Web</span> em Mogi Mirim, SP.</h3>
+              <h3><span style={{borderBottom: '4px solid #ff5678'}}>Web developer</span> in Tokyo, Japan.</h3>
             </div>
-            <h4 className={styles.hero__intro}>Olá! Me chamo Bruno e trabalho como freelancer realizando atualizações em sites já existentes ou desenvolvendo novos sites do zero.</h4>
+            <h4 className={styles.hero__intro}>{`Hello! My name is Bruno, and I'm a web developer from Brazil, currently living in Japan.`}</h4>
             <Button style="big" />
           </div>
         </main>
