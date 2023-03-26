@@ -16,7 +16,7 @@ export default function Hero() {
             <div>
               <h3><span style={{borderBottom: '4px solid #ff5678'}}>Web developer</span> in Tokyo, Japan.</h3>
             </div>
-            <h4 className={styles.hero__intro}>Hello! My name is Bruno, and I'm a web developer from Brazil, currently living in Japan.</h4>
+            <h4 className={styles.hero__intro}>{`Hello! My name is Bruno, and I'm a web developer from Brazil, currently living in Japan.`}</h4>
             <Button style="big" />
           </div>
         </main>

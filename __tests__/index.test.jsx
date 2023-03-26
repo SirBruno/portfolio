@@ -10,7 +10,7 @@ describe('Home', () => {
     render(<Home />)
 
     const h1 = screen.getByRole('heading', { name: 'BRUNO SILVA', })
-    const h2 = screen.getByRole('heading', { name: 'Desenvolvedor Web em Mogi Mirim, SP.', })
+    const h2 = screen.getByRole('heading', { name: 'Web developer in Tokyo, Japan.', })
 
     expect(h1).toBeInTheDocument()
     expect(h2).toBeInTheDocument()

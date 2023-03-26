@@ -16,7 +16,7 @@ export default function Home() {
           <div>
             <div>
               <h2>About me</h2>
-              I'm a web developer by heart and marketing analyst by accident.
+              {`I'm a web developer by heart and marketing analyst by accident.`}
             </div>
           </div>
           <div className={styles.experience}>
