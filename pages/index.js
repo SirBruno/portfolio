@@ -15,23 +15,21 @@ export default function Home() {
         <div className={styles.content_area}>
           <div>
             <div>
-              <h2>Serviços</h2>
-              <p>
-                <h4>Atualização de site</h4> Correções, adições, alterações, etc.</p>
-              <p><h4>Desenvolvimento de site</h4> Desde a concepção e aprovação do design até a entrega.</p>
+              <h2>About me</h2>
+              I'm a web developer by heart and marketing analyst by accident.
             </div>
           </div>
           <div className={styles.experience}>
             <div>
-              <h2>Clientes</h2>
+              <h2>Skills</h2>
               <div className={styles.jobs}>
                 <div>
-                  <div className={styles.logoTransluz}>
-                    <Image src={logoTransluz} alt="Logo Transluz" />
-                  </div>
-                  <p><b><a href="https://transluzviagens.com.br" target="_blank" rel="noreferrer">{"Transluz Viagens"}</a></b></p>
-                  <p>Atualização de site</p>
-                  <p className={styles.half_opacity}>2023</p>
+                  <p><b>Marketing</b></p>
+                  <p>Salesforce Marketing Cloud, AmpScript, SQL.</p>
+                </div>
+                <div>
+                  <p><b>Web</b></p>
+                  <p>Next.js, WordPress, Webflow.</p>
                 </div>
               </div>
             </div>
@@ -41,12 +39,12 @@ export default function Home() {
       <section id="Contact" className={styles.two}>
         <section>
           <div>
-            <h2>Contato</h2>
+            <h2>Contact</h2>
             <div>
               <p><a href="https://wa.me/5519971159735" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faWhatsapp} /> WhatsApp</a></p>
               <br />
               <h4><b>(19) 97115 9735</b></h4>
-              <p>WhatsApp apenas!</p>
+              <p>WhatsApp only!</p>
             </div>
           </div>
         </section>
