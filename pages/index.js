@@ -1,12 +1,13 @@
 import React from 'react';
 import styles from '../styles/Home.module.scss'
 import Hero from './sections/Hero/Hero.js'
-import Image from "next/image"
-import logoTransluz from '../public/logo-transluz.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { gsap, ScrollTrigger, Draggable, Flip, MotionPathPlugin } from "gsap/dist/all";
 
 export default function Home() {
+
+  gsap.registerPlugin(ScrollTrigger, Draggable, Flip, MotionPathPlugin); 
 
   return (
     <div>
