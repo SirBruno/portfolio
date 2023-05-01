@@ -1,28 +1,43 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styles from '../styles/Home.module.scss'
 import Hero from './sections/Hero/Hero.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
-import { gsap, ScrollTrigger, Draggable, Flip, MotionPathPlugin } from "gsap/dist/all";
+// import { gsap, Draggable, Flip, MotionPathPlugin } from "gsap/dist/all";
+// import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import { gsap } from "gsap/dist/gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
 
-  gsap.registerPlugin(ScrollTrigger, Draggable, Flip, MotionPathPlugin); 
+  gsap.registerPlugin(ScrollTrigger);
+
+  useEffect(() => {
+    gsap.from(".aboutSection__title", {
+      scrollTrigger: {
+        trigger: ".aboutSection__content",
+        y: 0
+      },
+      y: 200
+    })
+  }, [])
 
   return (
     <div>
       <Hero />
-      <section className={styles.section_01}>
-        <div className={styles.content_area}>
+      <section className={`${styles.section_01} aboutSection`}>
+        <div className={`${styles.content_area} aboutSection__content`}>
           <div>
             <div>
-              <h2>About me</h2>
+              <h2 className="aboutSection__title">About me</h2>
               {`I'm a creative web developer from Brazil, currently living in Japan.`}
             </div>
           </div>
           <div className={styles.experience}>
             <div>
-              <h2>Skills</h2>
+              <h2 className="aboutSection__title">Skills</h2>
               <div className={styles.jobs}>
                 <div>
                   <p>GSAP, Next.js, WordPress, Webflow.</p>
