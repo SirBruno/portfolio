@@ -17,7 +17,7 @@ export default function Home() {
           <div>
             <div>
               <h2>About me</h2>
-              {`I'm a web developer by heart and marketing analyst by accident.`}
+              {`I'm a creative web developer from Brazil, currently living in Japan.`}
             </div>
           </div>
           <div className={styles.experience}>
@@ -25,12 +25,7 @@ export default function Home() {
               <h2>Skills</h2>
               <div className={styles.jobs}>
                 <div>
-                  <p><b>Marketing</b></p>
-                  <p>Salesforce Marketing Cloud, AmpScript, SQL.</p>
-                </div>
-                <div>
-                  <p><b>Web</b></p>
-                  <p>Next.js, WordPress, Webflow.</p>
+                  <p>GSAP, Next.js, WordPress, Webflow.</p>
                 </div>
               </div>
             </div>
