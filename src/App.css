@@ -10,9 +10,13 @@
 
 .App h1 {
   margin: 0;
-  font-size: 72px;
+  font-size: 48px;
   line-height: 1;
   z-index: 1;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-weight: 100;
+  opacity: .8
 }
 
 .nav {
@@ -25,11 +29,18 @@
   margin: 0 auto;
   align-items: center;
   line-height: 1;
-  height: 50px;
+  height: 75px;
+}
+
+.nav__logo img {
+  height: 40px;
+  width: auto;
 }
 
 .nav__links a {
   display: inline-block;
+  text-decoration: none;
+  color: #fff;
 }
 
 .nav__links a:not(:last-child) {
