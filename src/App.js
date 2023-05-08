@@ -2,7 +2,6 @@ import { useEffect } from 'react'
 import './App.css'
 import { gsap } from 'gsap'
 import heroIcon from './assets/heroIcon.png'
-import { ReactComponent as YourSvg } from './assets/hero-icon.svg'
 
 function App() {
 
@@ -88,13 +87,11 @@ function App() {
     <div className="App">
       <nav className="nav">
         <span className="nav__logo">
-          {/* <YourSvg /> */}
           <img src={heroIcon} alt="Hero icon" />
         </span>
         <div className="nav__links">
-          <a href="google.com">Link 1</a>
-          <a href="google.com">Link 2</a>
-          <a href="google.com">Link 3</a>
+          <a href="https://github.com/SirBruno" target='_blank' rel="noreferrer">GitHub</a>
+          <a href="https://linkedin.com/profile/sibruno" target='_blank' rel="noreferrer">LinkedIn</a>
         </div>
       </nav>
       <h1>
