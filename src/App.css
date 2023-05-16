@@ -46,3 +46,17 @@
 .nav__links a:not(:last-child) {
   padding-right: 32px;
 }
+
+@media screen and (max-width: 600px) {
+  .App, .nav {
+    padding: 0 20px;
+  }
+
+  .nav {
+    box-sizing: border-box;
+  }
+
+  .App h1 {
+    font-size: 24px;
+  }
+}

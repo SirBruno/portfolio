@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useLayoutEffect } from 'react'
 import './App.css'
 import { gsap } from 'gsap'
 import heroIcon from './assets/heroIcon.png'
@@ -6,7 +6,7 @@ import heroIcon from './assets/heroIcon.png'
 function App() {
 
   
-  useEffect(() => {
+  useLayoutEffect(() => {
 
     gsap.defaults({ duration: 1, stagger: 0.2 })
 
