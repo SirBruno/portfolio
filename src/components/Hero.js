@@ -1,9 +1,11 @@
-import { useLayoutEffect } from "react";
+import { useLayoutEffect, useRef } from "react";
 import { gsap } from 'gsap'
 import heroIcon from '../assets/heroIcon.png'
 import './Hero.css'
 
-function Hero(props) {
+function Hero() {
+
+  const hero = useRef();
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
@@ -23,13 +25,13 @@ function Hero(props) {
       timeline2.to(".hero__title span", { filter: "blur(5px)" })
       timeline2.to(".hero__title span", { filter: "blur(0px)" }, "-=0.5")
       timeline2.to(".hero__title span", { delay: 5 })
-    }, props.app)
+    }, hero)
 
     return () => ctx.revert()
-  }, [props])
+  }, [])
 
   return (
-    <div className="hero">
+    <div ref={hero} className="hero">
       <nav className="hero__nav">
         <span className="hero__logoContainer">
           <img className="hero__logo" src={heroIcon} alt="hero__icon" />
