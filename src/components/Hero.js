@@ -57,7 +57,7 @@ function Hero() {
       </h1>
       <div className="hero__bottom">
         <span>Tokyo / Japan</span>
-        <span>Bruno Silva / Creative Web Developer</span>
+        <span>Creative Web Developer</span>
       </div>
     </div>
   )
