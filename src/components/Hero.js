@@ -16,8 +16,9 @@ function Hero() {
       const timeline = gsap.timeline()
 
       timeline.from([".hero__title span"], { y: 200, duration: 0.5, opacity: 0, ease: "power1.inOut" })
+      timeline.from([".nav__link"], { x: 200, stagger: 0.1, opacity: 0, duration: 0.2 })
+      timeline.from(".hero__bottom span", { x: 200, opacity: 0, stagger: 0.1, duration: 0.2, ease: "power4.out" }, "<")
       timeline.from([".hero__logoContainer"], { x: -200, duration: 0.2, opacity: 0 })
-      timeline.from([".nav__link"], { x: 200, stagger: 0.1, opacity: 0, duration: 0.2 }, "<")
       timeline.to([".hero__logo"], { rotation: 360, x: 60, ease: "power4.out" }, "<")
       timeline.to([".hero__logo"], { rotation: -390, x: -5, duration: 3, ease: "power1.inOut" }, "-=0.5")
       timeline.to([".hero__logo"], { rotation: -360, x: 0, ease: "back.in" })
@@ -54,6 +55,10 @@ function Hero() {
         <span>V</span>
         <span>A</span>
       </h1>
+      <div className="hero__bottom">
+        <span>Tokyo / Japan</span>
+        <span>Bruno Silva / Creative Web Developer</span>
+      </div>
     </div>
   )
 
