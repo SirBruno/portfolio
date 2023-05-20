@@ -1,6 +1,6 @@
 import { useLayoutEffect, useRef } from "react";
 import { gsap } from 'gsap'
-import heroIcon from '../assets/heroIcon.png'
+import heroIcon from '../../assets/heroIcon.png'
 import './Hero.css'
 
 function Hero() {
