@@ -1,11 +1,11 @@
 import { useLayoutEffect, useRef } from "react";
-import { gsap } from 'gsap'
 import heroIcon from '../../assets/heroIcon.png'
 import './Hero.css'
 
-function Hero() {
+function Hero(props) {
 
   const hero = useRef();
+  const gsap = props.gsap;
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
@@ -29,7 +29,7 @@ function Hero() {
     }, hero)
 
     return () => ctx.revert()
-  }, [])
+  }, [gsap])
 
   return (
     <div ref={hero} className="hero">
