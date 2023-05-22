@@ -7,12 +7,16 @@ function App() {
 
   const section = useRef()
   gsap.registerPlugin(ScrollTrigger)
+  ScrollTrigger.config({ 
+    ignoreMobileResize: true
+  });
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
       const timeline = gsap.timeline({
         scrollTrigger: {
-          trigger: "section h2",
+          trigger: ".myDiv",
+          onEnter: self => console.log(self.isActive),
         }
       })
 
@@ -20,7 +24,7 @@ function App() {
         y: 0,
         duration: 0.5,
         ease: "power1.out",
-        opacity: .75,
+        opacity: .75
       })
     }, section)
 
@@ -31,7 +35,7 @@ function App() {
     <div className="App">
       <Hero gsap={gsap} />
       <section ref={section}>
-        <div>
+        <div className="myDiv">
           <h2>HTML & CSS</h2>
           <p>I spent my entire teenagehood studying only HTML & CSS, not only because that's the only thing I needed to customize my website, but also because I was afraid of JavaScript back then.</p>
         </div>
