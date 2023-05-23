@@ -1,49 +1,61 @@
-section {
-  background: #fff;
-  color: #000;
-  min-height: 300px;
+/* ANIMATION EXPERIMENT */
+
+.javaScript {
+  background: #1a1a1a;
+  color: #fff;
   padding: 100px 0;
+  min-height: 400px;
   display: flex;
   align-items: center;
 }
 
-section div {
+.javaScript div {
   max-width: 700px;
   margin: 0 auto;
+  color: #fff;
 }
 
-section h2 {
+.javaScript h3 {
   font-size: 3.5rem;
-  line-height: 1;
   font-weight: 300;
   margin: 0;
-  transform: translate(0, 100px);
-  opacity: 0;
-  padding-bottom: 50px;
+  line-height: 1;
+  position: absolute;
+  bottom: -100%;
+  text-transform: uppercase;
 }
 
-section p {
+.javaScript p {
+  margin: 50px 0 0;
   line-height: 150%;
   font-weight: 400;
   font-size: 1.2rem;
-  transform: translate(0, 100px);
+  opacity: .5;
+  transform: translate(0, 50px);
   opacity: 0;
-  margin: 0;
-  color: #8b8b8b;
+}
+
+.titleContainer {
+  height: 50px;
+  position: relative;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 600px) {
-  section {
-    padding: 20px;
+  .javaScript {
+    padding: 50px 20px;
   }
 
-  section h2 {
+  .titleContainer {
+    height: 40px;
+  }
+
+  .javaScript h3 {
     font-size: 2.5rem;
-    padding-bottom: 20px;
-    transform: translate(0, 50px);
+    bottom: -100%;
   }
 
-  section p {
+  .javaScript p {
     font-size: 1rem;
     transform: translate(0, 50px);
   }

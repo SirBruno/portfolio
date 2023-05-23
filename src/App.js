@@ -2,12 +2,13 @@ import { useLayoutEffect, useRef } from 'react'
 import { gsap, ScrollTrigger } from 'gsap/all'
 import './App.css'
 import Hero from './components/Hero/Hero'
+import HtmlCss from './components/HtmlCss/HtmlCss'
 
 function App() {
 
   const section = useRef()
   gsap.registerPlugin(ScrollTrigger)
-  ScrollTrigger.config({ 
+  ScrollTrigger.config({
     ignoreMobileResize: true
   });
 
@@ -21,18 +22,16 @@ function App() {
         }
       })
 
-      timeline.to("section h2", {
-        y: 0,
+      timeline.to(".javaScript h3", {
+        bottom: 0,
         duration: 0.5,
-        ease: "power1.out",
-        opacity: 1
+        ease: "power1.out"
       })
 
-      timeline.to("section p", {
+      timeline.to(".javaScript p", {
         y: 0,
+        opacity: 0.5,
         duration: 0.5,
-        ease: "power1.out",
-        opacity: 1,
         delay: 0.1
       }, "<")
     }, section)
@@ -42,11 +41,14 @@ function App() {
 
   return (
     <div className="App">
-      <Hero gsap={gsap} />
-      <section ref={section}>
+      <Hero gsap={gsap} ScrollTrigger={ScrollTrigger} />
+      <HtmlCss gsap={gsap} ScrollTrigger={ScrollTrigger} />
+      <section ref={section} className="javaScript">
         <div className="myDiv">
-          <h2>HTML & CSS</h2>
-          <p>I spent my entire teenagehood studying only HTML & CSS, not only because that's the only thing I needed to customize my website, but also because I was afraid of JavaScript back then.</p>
+          <div className="titleContainer">
+            <h3>JavaScript</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
         </div>
       </section>
     </div>
