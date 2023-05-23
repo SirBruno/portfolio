@@ -17,15 +17,24 @@ function App() {
         scrollTrigger: {
           trigger: ".myDiv",
           onEnter: self => console.log(self.isActive),
+          start: "top 85%"
         }
       })
 
-      timeline.to(["section h2", "section p"], {
+      timeline.to("section h2", {
         y: 0,
         duration: 0.5,
         ease: "power1.out",
-        opacity: .75
+        opacity: 1
       })
+
+      timeline.to("section p", {
+        y: 0,
+        duration: 0.5,
+        ease: "power1.out",
+        opacity: 1,
+        delay: 0.1
+      }, "<")
     }, section)
 
     return () => ctx.revert()
