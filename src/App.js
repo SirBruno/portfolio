@@ -3,6 +3,7 @@ import { gsap, ScrollTrigger } from 'gsap/all'
 import './App.css'
 import Hero from './components/Hero/Hero'
 import HtmlCss from './components/HtmlCss/HtmlCss'
+import Section from './components/Section/Section'
 
 function App() {
 
@@ -51,8 +52,11 @@ function App() {
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
         </div>
       </section>
+      <Section title={"Template"}>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+      </Section>
     </div>
   );
 }
 
-export default App;
+export default App
