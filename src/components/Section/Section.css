@@ -1,3 +1,8 @@
+section.dark {
+  background: #1a1a1a;
+  color: #fff;
+}
+
 .section__titleContainer {
   margin: 0 0 50px;
   overflow: hidden;
