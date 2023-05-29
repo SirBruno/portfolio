@@ -30,7 +30,7 @@ function Section(props) {
   }, [])
 
   return (
-    <section ref={section} className="section">
+    <section ref={section} className={`section ${props.theme}`}>
       <div className="section__inner">
         <div className="section__titleContainer">
           <h2 className="section__title">{props.title}</h2>
