@@ -11,7 +11,7 @@ function App() {
       <Hero gsap={gsap} ScrollTrigger={ScrollTrigger} />
       <HtmlCss gsap={gsap} ScrollTrigger={ScrollTrigger} />
       <Section theme={"dark"} title={"JavaScript"}>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+        I began learning JS in 2017 when I started college. Back then I didn't know anything other than HTML & CSS, but I knew I wanted to specialize in web development, so JavaScript was the language I chose for most of my college projects.
       </Section>
     </div>
   );
