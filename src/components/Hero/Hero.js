@@ -15,7 +15,7 @@ function Hero(props) {
       timeline2.pause()
       const timeline = gsap.timeline()
 
-      // timeline.from([".hero__title span"], { y: 200, duration: 0.5, opacity: 0, ease: "power1.inOut" })
+      timeline.from([".hero__title span"], { y: 200, duration: 0.5, opacity: 0, ease: "power1.inOut" })
       timeline.from([".nav__link"], { x: 200, stagger: 0.1, opacity: 0, duration: 0.2 })
       timeline.from(".hero__bottom span", { x: 200, opacity: 0, stagger: 0.1, duration: 0.2, ease: "power4.out" }, "<")
       timeline.from([".hero__logoContainer"], { x: 200, duration: 0.2, opacity: 0 }, "<")
