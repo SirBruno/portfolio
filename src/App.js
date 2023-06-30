@@ -16,6 +16,9 @@ function App() {
       <Section theme={"dark"} title={"JavaScript"}>
         I began learning JS in 2017 when I started college. Back then I didn't know anything other than HTML & CSS, but I knew I wanted to specialize in web development, so JavaScript was the language I chose for most of my college projects.
       </Section>
+      <Section title={"Animations"}>
+        I only started getting deep into complex website animations a few months ago, but I think I'm getting the hang of GSAP now. I also experimented with Motion One for a while and it's pretty good and easy to use too. I have no preference between GSAP and Motion One, I just spend more time with GSAP because I started learned it first so I kinda got used to it.
+      </Section>
     </div>
   );
 }
