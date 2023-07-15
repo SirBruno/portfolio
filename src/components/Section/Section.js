@@ -24,6 +24,22 @@ function Section(props) {
         y: 0,
         duration: 0.5
       })
+      gsap.to(".section__pContainer", {
+        top: 0,
+        marginTop: 50
+      })
+
+      gsap.to('.section__pContainer', {
+        duration: 2,
+        padding: 50,
+        background: "#00f",
+        scrollTrigger: {
+          trigger: ".section__pContainer",
+          start: "top center",
+          end: "bottom center",
+          scrub: true
+        }
+      })
     }, section)
 
     return () => ctx.revert()
@@ -39,6 +55,7 @@ function Section(props) {
           <p>{props.children}</p>
         </div>
       </div>
+      <p className="gsapText">"in <a href="https://greensock.com/gsap/" target='_blank' rel="noopener noreferer">gsap</a> we trust."</p>
     </section>
   )
 }
