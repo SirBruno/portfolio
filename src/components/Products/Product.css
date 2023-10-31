@@ -44,11 +44,23 @@
   font-weight: 500;
 }
 
+.Products__PriceBox {
+  display: flex;
+  gap: 5px;
+  align-items: flex-end;
+}
+
 .Products__Price {
   display: block;
   font-size: 16px;
   margin: 10px 0 0;
   font-weight: 500;
+}
+
+.Products__Price.Discounted {
+  text-decoration: line-through;
+  opacity: .5;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 600px) {

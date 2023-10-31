@@ -11,37 +11,55 @@ function Product() {
             <span className="Products__Image"></span>
             <span className="Products__CardTitle">Lorem ipsum dolor sit amet</span>
             <span className="Products__CardDescription">men's clothing</span>
-            <span className="Products__Price">$99.95</span>
+            <div className="Products__PriceBox">
+              <span className="Products__Price">$49.97</span>
+              <span className="Products__Price Discounted">$99.95</span>
+            </div>
           </div>
           <div className="Products__Card">
             <span className="Products__Image"></span>
             <span className="Products__CardTitle">Lorem ipsum dolor sit amet</span>
             <span className="Products__CardDescription">men's clothing</span>
-            <span className="Products__Price">$99.95</span>
+            <div className="Products__PriceBox">
+              <span className="Products__Price">$49.97</span>
+              <span className="Products__Price Discounted">$99.95</span>
+            </div>
           </div>
           <div className="Products__Card">
             <span className="Products__Image"></span>
             <span className="Products__CardTitle">Lorem ipsum dolor sit amet</span>
             <span className="Products__CardDescription">men's clothing</span>
-            <span className="Products__Price">$99.95</span>
+            <div className="Products__PriceBox">
+              <span className="Products__Price">$49.97</span>
+              <span className="Products__Price Discounted">$99.95</span>
+            </div>
           </div>
           <div className="Products__Card">
             <span className="Products__Image"></span>
             <span className="Products__CardTitle">Lorem ipsum dolor sit amet</span>
             <span className="Products__CardDescription">men's clothing</span>
-            <span className="Products__Price">$99.95</span>
+            <div className="Products__PriceBox">
+              <span className="Products__Price">$49.97</span>
+              <span className="Products__Price Discounted">$99.95</span>
+            </div>
           </div>
           <div className="Products__Card">
             <span className="Products__Image"></span>
             <span className="Products__CardTitle">Lorem ipsum dolor sit amet</span>
             <span className="Products__CardDescription">men's clothing</span>
-            <span className="Products__Price">$99.95</span>
+            <div className="Products__PriceBox">
+              <span className="Products__Price">$49.97</span>
+              <span className="Products__Price Discounted">$99.95</span>
+            </div>
           </div>
           <div className="Products__Card">
             <span className="Products__Image"></span>
             <span className="Products__CardTitle">Lorem ipsum dolor sit amet</span>
             <span className="Products__CardDescription">men's clothing</span>
-            <span className="Products__Price">$99.95</span>
+            <div className="Products__PriceBox">
+              <span className="Products__Price">$49.97</span>
+              <span className="Products__Price Discounted">$99.95</span>
+            </div>
           </div>
         </div>
       </div>
