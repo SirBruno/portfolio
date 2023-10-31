@@ -1,0 +1,12 @@
+.nav__text {
+  display: flex;
+  justify-content: center;
+  background: var(--theme-color);
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  height: 40px;
+  font-size: 14px;
+  line-height: 1;
+  align-items: center;
+}
