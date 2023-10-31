@@ -13,7 +13,7 @@
 
 .Products__Grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat( auto-fit, minmax(300px, 1fr ) );
   column-gap: 16px;
   row-gap: 32px;
 }
@@ -49,4 +49,11 @@
   font-size: 16px;
   margin: 10px 0 0;
   font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .Products__Container {
+    padding: 20px;
+    margin: 40px auto;
+  }
 }
