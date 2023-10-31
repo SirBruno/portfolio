@@ -1,0 +1,52 @@
+.Products__Container {
+  max-width: 1140px;
+  margin: 80px auto;
+}
+
+.Products h3 {
+  margin: 0;
+  line-height: 1;
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+.Products__Grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 16px;
+  row-gap: 32px;
+}
+
+.Products__Card {
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+}
+
+.Products__Image {
+  display: block;
+  height: 240px;
+  background: #ccc;
+}
+
+.Products__CardTitle {
+  display: block;
+  font-size: 16px;
+  margin: 10px 0 4px;
+  font-weight: 500;
+}
+
+.Products__CardDescription {
+  font-size: 14px;
+  line-height: 140%;
+  opacity: .5;
+  font-weight: 500;
+}
+
+.Products__Price {
+  display: block;
+  font-size: 16px;
+  margin: 10px 0 0;
+  font-weight: 500;
+}
