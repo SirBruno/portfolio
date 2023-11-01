@@ -13,7 +13,8 @@
 
 .Products__Grid {
   display: grid;
-  grid-template-columns: repeat( auto-fit, minmax(300px, 1fr ) );
+  grid-template-columns: repeat( auto-fit, minmax(240px, 1fr) );
+  /* justify-content: space-between; */
   column-gap: 16px;
   row-gap: 32px;
 }
@@ -27,7 +28,11 @@
 .Products__Image {
   display: block;
   height: 240px;
-  background: #ccc;
+  object-fit: contain;
+  padding: 24px;
+  /* border: thin solid #eee; */
+  /* box-shadow: 0 0 10px #eee; */
+  background: #fff;
 }
 
 .Products__CardTitle {
