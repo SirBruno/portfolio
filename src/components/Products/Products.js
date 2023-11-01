@@ -35,12 +35,12 @@ function Product() {
             products != null &&
             products.map(x =>
               <div key={x.id} className="Products__Card">
-                <img src={x.image} className="Products__Image"></img>
+                <img alt={x.title} src={x.image} className="Products__Image"></img>
                 <span className="Products__CardTitle">{x.title}</span>
-                <span className="Products__CardDescription">men's clothing</span>
+                <span className="Products__CardDescription">{x.category}</span>
                 <div className="Products__PriceBox">
-                  <span className="Products__Price">$49.97</span>
-                  <span className="Products__Price Discounted">$99.95</span>
+                  <span className="Products__Price">{`$` + (x.price/2).toFixed(2)}</span>
+                  <span className="Products__Price Discounted">{`$` + x.price}</span>
                 </div>
               </div>
             )
