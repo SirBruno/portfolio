@@ -35,7 +35,7 @@ function Product() {
             products != null &&
             products.map(x =>
               <div key={x.id} className="Products__Card">
-                <span className="Products__Image"></span>
+                <img src={x.image} className="Products__Image"></img>
                 <span className="Products__CardTitle">{x.title}</span>
                 <span className="Products__CardDescription">men's clothing</span>
                 <div className="Products__PriceBox">
