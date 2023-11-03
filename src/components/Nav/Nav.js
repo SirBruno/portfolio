@@ -4,10 +4,14 @@ import './Nav.css'
 function Nav() {
 
   fetch('https://api.github.com/repos/SirBruno/portfolio/pulls', {
-  headers: {auth: 'Bearer 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'}
-})
-   .then(resp => resp.json())
-   .then(json => console.log(JSON.stringify(json)))
+    mode: 'no-cors',
+    headers: {
+      'Access-Control-Allow-Origin':'*',
+      auth: 'Bearer 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'
+    }
+  })
+    .then(resp => resp.json())
+    .then(json => console.log(JSON.stringify(json)))
 
   return (
     <nav className="nav">
