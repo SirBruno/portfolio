@@ -1,17 +1,41 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Nav.css'
 
 function Nav() {
 
-  fetch('https://api.github.com/repos/SirBruno/portfolio/pulls', {
-    mode: 'no-cors',
-    headers: {
-      'Access-Control-Allow-Origin':'*',
-      auth: 'Bearer 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'
+  useEffect(() => {
+    const getData = async () => {
+      const url = "https://api.github.com/repos/SirBruno/portfolio/pulls";
+
+      try {
+        const resp = await fetch(url, {
+          owner: 'SirBruno',
+          repo: 'portfolio',
+          headers: {
+            Accept: "application/vnd.github+json",
+            'Access-Control-Allow-Origin': '*',
+            auth: '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'
+          }
+        });
+        const data = await resp.json();
+        // Do anything you need to do to
+        // data before this call:
+        console.log(data);
+      } catch (err) {
+        console.error(err);
+      }
     }
-  })
-    .then(resp => resp.json())
-    .then(json => console.log(JSON.stringify(json)))
+
+    getData();
+  }, []);
+
+  // fetch('https://api.github.com/repos/SirBruno/portfolio/pulls', {
+  //   mode: 'no-cors',
+  //   headers: {
+  //     'Access-Control-Allow-Origin':'*',
+  //     auth: 'Bearer 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'
+  //   }
+  // }).then(resp => resp.json()).then(json => console.log(JSON.stringify(json)))
 
   return (
     <nav className="nav">
