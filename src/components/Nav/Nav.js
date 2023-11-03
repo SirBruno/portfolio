@@ -15,7 +15,10 @@ function Nav() {
           headers: {
             'Content-Type': 'application/json',
             Accept: "application/vnd.github+json",
-            auth: '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'
+            "access-control-allow-origin": "*",
+            'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+            'Access-Control-Allow-Methods': '*',
+            Authorization: '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'
           }
         });
         const data = await resp.json();
