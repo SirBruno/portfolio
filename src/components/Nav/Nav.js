@@ -9,20 +9,22 @@ function Nav() {
 
       try {
         const resp = await fetch(url, {
+          method: "GET",
+          credentials: 'include',
           owner: 'SirBruno',
           repo: 'portfolio',
           headers: {
+            'Content-Type': 'application/json',
             Accept: "application/vnd.github+json",
-            'Access-Control-Allow-Origin': '*',
-            auth: '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'
+            auth: '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'
           }
         });
         const data = await resp.json();
         // Do anything you need to do to
         // data before this call:
-        console.log(data);
+        console.log('success====:', data);
       } catch (err) {
-        console.error(err);
+        console.error('error============:', err);
       }
     }
 
