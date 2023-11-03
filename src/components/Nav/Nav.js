@@ -1,49 +1,31 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
+import axios from 'axios';
 import './Nav.css'
 
 function Nav() {
 
-  useEffect(() => {
-    const getData = async () => {
-      const url = "https://api.github.com/repos/SirBruno/portfolio/pulls";
+  const [PRs, SetPRs] = useState(null);
 
-      try {
-        const resp = await fetch(url, {
-          method: "GET",
-          owner: 'SirBruno',
-          repo: 'portfolio',
-          headers: {
-            'Content-Type': 'application/json',
-            Accept: "application/vnd.github+json",
-            "access-control-allow-origin": "*",
-            'Access-Control-Allow-Headers': 'Content-Type, Authorization',
-            'Access-Control-Allow-Methods': '*',
-            Authorization: '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'
-          }
-        });
-        const data = await resp.json();
-        // Do anything you need to do to
-        // data before this call:
-        console.log('success====:', data);
-      } catch (err) {
-        console.error('error============:', err);
-      }
+  useEffect(() => {
+    async function fetchData() {
+      const response = await axios.get('  https://api.github.com/repos/sirbruno/portfolio/pulls?state=closed', {
+        headers: {
+          'Authorization': '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',
+          "Accept": "application/vnd.github+json"
+        }
+      });
+      console.log(response.data[0])
+      SetPRs(response.data)
+      return response.data;
     }
 
-    getData();
+    fetchData()
   }, []);
-
-  // fetch('https://api.github.com/repos/SirBruno/portfolio/pulls', {
-  //   mode: 'no-cors',
-  //   headers: {
-  //     'Access-Control-Allow-Origin':'*',
-  //     auth: 'Bearer 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'
-  //   }
-  // }).then(resp => resp.json()).then(json => console.log(JSON.stringify(json)))
 
   return (
     <nav className="nav">
-      <span className="nav__text">Work in progress</span>
+      <span className="nav__text">WIP / Latest update ({PRs != null && PRs[0].closed_at.replace(/(\d{4})-(\d{2})-(\d{2}).*/, '$2/$3/$1')
+ }):&nbsp;<a href={PRs != null && PRs[0]._links.html.href} target="_blank" rel="noreferrer">{PRs != null && PRs[0].title}</a></span>
       <div className="nav__menu container">
         <div className="nav__logo">Cupcake</div>
         <div className="nav__links">

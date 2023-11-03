@@ -3,12 +3,25 @@
   justify-content: center;
   background: var(--theme-color);
   color: #fff;
-  text-transform: uppercase;
   font-weight: 500;
+  text-transform: capitalize;
   height: 32px;
   font-size: 12px;
   line-height: 1;
   align-items: center;
+}
+
+.nav__text a {
+  color: #fff;
+}
+
+.nav__text b {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.nav__text a:hover {
+  text-decoration: none;
 }
 
 .nav__text2 {
@@ -75,5 +88,12 @@
   .nav__logo {
     padding: 20px;
     margin: 0 auto;
+  }
+
+  .nav__text {
+    flex-direction: column;
+    gap: 4px;
+    height: auto;
+    padding: 10px 0;
   }
 }
