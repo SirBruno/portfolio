@@ -10,7 +10,6 @@ function Nav() {
       try {
         const resp = await fetch(url, {
           method: "GET",
-          credentials: 'include',
           owner: 'SirBruno',
           repo: 'portfolio',
           headers: {
