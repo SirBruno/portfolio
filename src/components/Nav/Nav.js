@@ -10,7 +10,7 @@ function Nav() {
     async function fetchData() {
       const response = await axios.get('  https://api.github.com/repos/sirbruno/portfolio/pulls?state=closed', {
         headers: {
-          'Authorization': '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',
+          'Authorization': process.env.GitHub_Token,
           "Accept": "application/vnd.github+json"
         }
       });
