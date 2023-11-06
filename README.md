@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+![anime gif](https://media3.giphy.com/media/CoQeELei1UmDC/giphy.gif?cid=ecf05e47k7iw71cdpptevqdn28bef7dy87b793u6dn72mlm6&ep=v1_gifs_search&rid=giphy.gif)
+
 ## Available Scripts
 
 In the project directory, you can run:
