@@ -80,6 +80,20 @@
   border-bottom: 2px solid #000;
 }
 
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  display: none;
+}
+
+.mobileMenu_bar1,
+.mobileMenu_bar2 {
+  width: 24px;
+  height: 2px;
+  background: black;
+}
+
 @media screen and (max-width: 600px) {
   .nav__links {
     display: none;
@@ -87,7 +101,6 @@
 
   .nav__logo {
     padding: 20px;
-    margin: 0 auto;
   }
 
   .nav__text {
@@ -95,5 +108,10 @@
     gap: 4px;
     height: auto;
     padding: 10px 0;
+  }
+
+  .mobileMenu {
+    display: flex;
+    margin-right: 20px;
   }
 }
