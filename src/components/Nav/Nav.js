@@ -32,6 +32,10 @@ function Nav() {
           <a href="#.com">Clothes</a>
           <a href="#.com">Jewelery</a>
         </div>
+        <div className="mobileMenu">
+          <div className="mobileMenu_bar1"></div>
+          <div className="mobileMenu_bar2"></div>
+        </div>
       </div>
       <span className="nav__text2">
         <span>⏱️Everything 50% off until {new Date((new Date()).getTime() + (60 * 60 * 24 * 1000)).toLocaleDateString('en-US', { day: 'numeric', month: 'numeric' })}</span>
