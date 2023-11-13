@@ -108,7 +108,7 @@
 
 .mobileMenu_container {
   position: fixed;
-  background: red;
+  background: #fff;
   top: 0;
   left: 0;
   width: 100%;
@@ -118,10 +118,20 @@
   justify-content: center;
   align-items: center;
   display: none;
+  flex-direction: column;
+  gap: .75rem;
+  font-size: 1.5rem;
+}
+
+.mobileMenu_container a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
 }
 
 .mobileMenu_Active {
   gap: 0;
+  position: fixed;
 }
 
 .mobileMenu_Active .mobileMenu_bar1 {

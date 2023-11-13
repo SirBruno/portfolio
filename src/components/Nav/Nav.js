@@ -35,6 +35,8 @@ function Nav() {
     SetMobileMenu(!mobileMenu)
   }
 
+  const baseurl = window.location.origin + window.location.pathname
+
   return (
     <nav className="nav">
       <span className="nav__text">WIP / Latest update ({PRs != null && PRs[0].closed_at.replace(/(\d{4})-(\d{2})-(\d{2}).*/, '$2/$3/$1')
@@ -42,14 +44,19 @@ function Nav() {
       <div className="nav__menu container">
         <div className="nav__logo">Cupcake</div>
         <div className="nav__links">
-          <a href="#.com">Clothes</a>
-          <a href="#.com">Jewelery</a>
+          <a href={baseurl}>Home</a>
+          <a href="https://github.com/SirBruno/portfolio" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.instagram.com/brusilva_jp" target="_blank" rel="noreferrer">Instagram</a>
         </div>
         <div onClick={() => MobileMenuClick()} className="mobileMenu">
           <div className="mobileMenu_bar1"></div>
           <div className="mobileMenu_bar2"></div>
         </div>
-        <div className="mobileMenu_container">stuff</div>
+        <div className="mobileMenu_container">
+          <a href={baseurl}>Home</a>
+          <a href="https://github.com/SirBruno/portfolio" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.instagram.com/brusilva_jp" target="_blank" rel="noreferrer">Instagram</a>
+        </div>
       </div>
       <span className="nav__text2">
         <span>⏱️Everything 50% off until {new Date((new Date()).getTime() + (60 * 60 * 24 * 1000)).toLocaleDateString('en-US', { day: 'numeric', month: 'numeric' })}</span>
