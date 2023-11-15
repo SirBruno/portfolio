@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import './Nav.css'
+import { Link } from 'react-router-dom';
 
 function Nav() {
 
@@ -44,9 +45,10 @@ function Nav() {
       <div className="nav__menu container">
         <div className="nav__logo">Cupcake</div>
         <div className="nav__links">
-          <a href={baseurl}>Home</a>
+          <Link to="/">Home</Link>
           <a href="https://github.com/SirBruno/portfolio" target="_blank" rel="noreferrer">GitHub</a>
           <a href="https://www.instagram.com/brusilva_jp" target="_blank" rel="noreferrer">Instagram</a>
+          <Link to="/categories">Categories</Link>
         </div>
         <div onClick={() => MobileMenuClick()} className="mobileMenu">
           <div className="mobileMenu_bar1"></div>
