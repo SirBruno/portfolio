@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Product.css'
 
-function Product() {
+function Product(props) {
 
   const [products, setProducts] = useState(null);
 
@@ -48,27 +48,9 @@ function Product() {
   return (
     <div className="Products">
       <div className="Products__Container">
-        <h3>Men's clothing</h3>
+        <h3>{props.cat}</h3>
         <div className="Products__Grid">
-          { filteredProducts("men's clothing") }
-        </div>
-      </div>
-      <div className="Products__Container">
-        <h3>Women's clothing</h3>
-        <div className="Products__Grid">
-          { filteredProducts("women's clothing") }
-        </div>
-      </div>
-      <div className="Products__Container">
-        <h3>Jewelery</h3>
-        <div className="Products__Grid">
-          { filteredProducts("jewelery") }
-        </div>
-      </div>
-      <div className="Products__Container">
-        <h3>Electronics</h3>
-        <div className="Products__Grid">
-          { filteredProducts("electronics") }
+          { filteredProducts(props.cat) }
         </div>
       </div>
     </div>
