@@ -48,7 +48,7 @@ function Nav() {
           <Link to="/">Home</Link>
           <a href="https://github.com/SirBruno/portfolio" target="_blank" rel="noreferrer">GitHub</a>
           <a href="https://www.instagram.com/brusilva_jp" target="_blank" rel="noreferrer">Instagram</a>
-          <Link to="/categories">Categories</Link>
+          <Link to="/categories/men">Men</Link>
         </div>
         <div onClick={() => MobileMenuClick()} className="mobileMenu">
           <div className="mobileMenu_bar1"></div>
