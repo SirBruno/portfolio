@@ -8,14 +8,31 @@ import { Route, Routes, useParams } from 'react-router-dom'
 function App() {
 
 
-  function Men() {
+  function Category() {
+
     const params = useParams()
 
-    console.log(params)
+    const cats = [
+      {
+        param: "men",
+        name: "men's clothing"
+      },
+      {
+        param: "women",
+        name: "women's clothing"
+      }
+    ]
+
+    const c = cats.find(x => x.param === params.id)
+
+    console.log(params.id)
+    console.log(c === undefined)
 
     return (
       <div>
-        <Products cat="men's clothing" />
+        {
+          c === undefined ? "Not found." : <Products cat={c.name} />
+        }
       </div>
     )
   }
@@ -33,7 +50,7 @@ function App() {
             <Products cat="electronics" />
           </>
         } />
-        <Route path="categories/:id" element={<Men />} />
+        <Route path="categories/:id" element={<Category />} />
       </Routes>
       <Footer />
     </div>
