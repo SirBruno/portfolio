@@ -7,7 +7,7 @@ function Hero(props) {
   return (
     <div ref={hero} className="hero">
       <h1 className="hero__title">Cupcake</h1>
-      <h2>A fictional headless store.</h2>
+      <h2>A fictional headless ecommerce.</h2>
       <button className="hero__btn">Shop Now</button>
       <div className="hero__bottom">
         <div className="hero__address">
