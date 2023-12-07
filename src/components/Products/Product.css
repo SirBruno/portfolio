@@ -15,14 +15,21 @@
   display: grid;
   grid-template-columns: repeat( auto-fit, minmax(240px, 1fr) );
   /* justify-content: space-between; */
-  column-gap: 16px;
-  row-gap: 32px;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 
 .Products__Card {
   display: flex;
   flex-direction: column;
   text-transform: capitalize;
+  transition: .2s ease-out;
+}
+
+.Products__Card:hover {
+  opacity: .7;
+  cursor: pointer;
+  transition: .2s ease-out;
 }
 
 .Products__Image {
@@ -31,20 +38,21 @@
   object-fit: contain;
   padding: 24px;
   background: #fff;
+  margin-bottom: 16px;
 }
 
 .Products__CardTitle {
   display: block;
   font-size: 16px;
-  margin: 10px 0 4px;
-  font-weight: 500;
+  line-height: 1.5;
+  margin: 0px 0 8px;
 }
 
 .Products__CardDescription {
   font-size: 14px;
-  line-height: 140%;
-  opacity: .5;
-  font-weight: 500;
+  line-height: 1.5;
+  color: #8b8b8b;
+  font-weight: 400;
 }
 
 .Products__PriceBox {
@@ -55,7 +63,7 @@
 
 .Products__Price {
   display: block;
-  font-size: 16px;
+  font-size: 18px;
   margin: 10px 0 0;
   font-weight: 500;
 }
