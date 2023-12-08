@@ -2,6 +2,7 @@ import './App.css'
 import Hero from './components/Hero/Hero'
 import Nav from './components/Nav/Nav'
 import Products from './components/Products/Products'
+import ProductPage from './components/ProductPage/ProductPage'
 import Footer from './components/Footer/Footer'
 import { Route, Routes, useParams } from 'react-router-dom'
 
@@ -51,6 +52,7 @@ function App() {
           </>
         } />
         <Route path="categories/:id" element={<Category />} />
+        <Route path="product/:id" element={<ProductPage />} />
       </Routes>
       <Footer />
     </div>
