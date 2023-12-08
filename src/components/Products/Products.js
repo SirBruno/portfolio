@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 import './Product.css'
 
 function Product(props) {
@@ -23,20 +24,17 @@ function Product(props) {
     getData();
   }, []);
 
-  console.log("products")
-  console.log(products)
-
   const filteredProducts = (category) => {
     return products != null && products.filter(product => product.category === category).map(x =>
-      <div key={x.id} className="Products__Card">
-        <img alt={x.title} src={x.image} className="Products__Image"></img>
-        <span className="Products__CardDescription">{x.category}</span>
-        <span className="Products__CardTitle">{x.title}</span>
-        <div className="Products__PriceBox">
-          <span className="Products__Price">{`$` + (x.price / 2).toFixed(2)}</span>
-          <span className="Products__Price Discounted">{`$` + x.price}</span>
-        </div>
-      </div>
+        <Link key={x.id} className="Products__Card" to={`product/${x.id}`}>
+          <img alt={x.title} src={x.image} className="Products__Image"></img>
+          <span className="Products__CardTitle">{x.title}</span>
+          <span className="Products__CardDescription">{x.category}</span>
+          <div className="Products__PriceBox">
+            <span className="Products__Price">{`$` + (x.price / 2).toFixed(2)}</span>
+            <span className="Products__Price Discounted">{`$` + x.price}</span>
+          </div>
+        </Link>
     )
   }
 
@@ -50,7 +48,7 @@ function Product(props) {
       <div className="Products__Container">
         <h3>{props.cat}</h3>
         <div className="Products__Grid">
-          { filteredProducts(props.cat) }
+          {filteredProducts(props.cat)}
         </div>
       </div>
     </div>
