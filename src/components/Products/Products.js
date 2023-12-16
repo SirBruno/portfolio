@@ -25,7 +25,14 @@ function Product(props) {
   }, []);
 
   const filteredProducts = (category) => {
-    return products != null && products.filter(product => product.category === category).map(x =>
+    return products == null
+      ? <div className="products_loader_container">
+        <div className="products_loader"></div>
+        <div className="products_loader"></div>
+        <div className="products_loader"></div>
+        <div className="products_loader"></div>
+      </div>
+      : products.filter(product => product.category === category).map(x =>
         <Link key={x.id} className="Products__Card" to={`product/${x.id}`}>
           <img alt={x.title} src={x.image} className="Products__Image"></img>
           <span className="Products__CardTitle">{x.title}</span>
@@ -35,12 +42,7 @@ function Product(props) {
             <span className="Products__Price Discounted">{`$` + x.price}</span>
           </div>
         </Link>
-    )
-  }
-
-  console.log("filtered products:")
-  if (products != null) {
-    console.log(filteredProducts("men's clothing"))
+      )
   }
 
   return (
