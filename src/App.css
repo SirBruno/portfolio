@@ -8,41 +8,9 @@
   margin: 0 auto;
 }
 
-/* ANIMATION EXPERIMENT */
-
-.javaScript {
-  background: #1a1a1a;
-  color: #fff;
-  padding: 100px 0;
-  min-height: 400px;
-  display: flex;
-  align-items: center;
-}
-
-.javaScript div {
-  max-width: 700px;
-  margin: 0 auto;
-  color: #fff;
-}
-
-.javaScript h3 {
-  font-size: 3.5rem;
-  font-weight: 300;
-  margin: 0;
-  line-height: 1;
-  position: absolute;
-  bottom: -100%;
-  text-transform: uppercase;
-}
-
-.javaScript p {
-  margin: 50px 0 0;
-  line-height: 150%;
-  font-weight: 400;
-  font-size: 1.2rem;
-  opacity: .5;
-  transform: translate(0, 50px);
-  opacity: 0;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .titleContainer {
