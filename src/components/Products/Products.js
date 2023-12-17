@@ -13,8 +13,6 @@ function Product(props) {
       try {
         const resp = await fetch(url);
         const data = await resp.json();
-        // Do anything you need to do to
-        // data before this call:
         setProducts(data);
       } catch (err) {
         console.error(err);

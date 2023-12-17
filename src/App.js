@@ -38,19 +38,23 @@ function App() {
     )
   }
 
+  function Home() {
+    return (
+      <>
+        <Hero />
+        <Products cat="men's clothing" />
+        <Products cat="women's clothing" />
+        <Products cat="jewelery" />
+        <Products cat="electronics" />
+      </>
+    )
+  }
+
   return (
     <div className="App">
       <Nav />
       <Routes>
-        <Route path="/" element={
-          <>
-            <Hero />
-            <Products cat="men's clothing" />
-            <Products cat="women's clothing" />
-            <Products cat="jewelery" />
-            <Products cat="electronics" />
-          </>
-        } />
+        <Route exact path="/" element={<Home />} />
         <Route path="categories/:id" element={<Category />} />
         <Route path="product/:id" element={<ProductPage />} />
       </Routes>
