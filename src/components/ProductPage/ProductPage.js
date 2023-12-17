@@ -26,10 +26,28 @@ function ProductPage() {
   }, [params.id]);
 
   return (
-    <div>
-      <h1>product</h1>
-      <p>stuff</p>
-      {product != null && product.title}
+    <div className="container section">
+      {
+        product == null
+          ? <div>
+            Loading...
+          </div>
+          :
+          <div className="product_main">
+            <div>
+              <img src={product.image} alt="product" />
+            </div>
+            <div>
+              <span className="singleProduct_cat">{product.category}</span>
+              <h1>{product.title}</h1>
+              <p>{product.description}</p>
+              <div className="Products__PriceBox">
+              <span className="Products__Price">{`$` + (product.price / 2).toFixed(2)}</span>
+              <span className="Products__Price Discounted">{`$` + product.price}</span>
+              </div>
+            </div>
+          </div>
+      }
     </div>
   )
 }

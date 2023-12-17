@@ -36,8 +36,6 @@ function Nav() {
     SetMobileMenu(!mobileMenu)
   }
 
-  const baseurl = window.location.origin + window.location.pathname
-
   return (
     <nav className="nav">
       <span className="nav__text">WIP / Latest update ({PRs != null && PRs[0].closed_at.replace(/(\d{4})-(\d{2})-(\d{2}).*/, '$2/$3/$1')
@@ -56,9 +54,9 @@ function Nav() {
           <div className="mobileMenu_bar2"></div>
         </div>
         <div className="mobileMenu_container">
-          <a href={baseurl}>Home</a>
-          <a href="https://github.com/SirBruno/portfolio" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://www.instagram.com/brusilva_jp" target="_blank" rel="noreferrer">Instagram</a>
+          <Link onClick={() => MobileMenuClick()} to="/">Home</Link>
+          <a onClick={() => MobileMenuClick()} href="https://github.com/SirBruno/portfolio" target="_blank" rel="noreferrer">GitHub</a>
+          <a onClick={() => MobileMenuClick()} href="https://www.instagram.com/brusilva_jp" target="_blank" rel="noreferrer">Instagram</a>
         </div>
       </div>
       <span className="nav__text2">

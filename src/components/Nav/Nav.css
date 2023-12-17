@@ -150,7 +150,8 @@
   }
 
   .nav__logo {
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .nav__text {
@@ -162,6 +163,9 @@
 
   .mobileMenu {
     display: flex;
+  }
+
+  .mobileMenu_Active {
     margin-right: 20px;
   }
 }
