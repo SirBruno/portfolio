@@ -49,9 +49,12 @@
 }
 
 .nav__menu {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .nav__logo {
@@ -59,11 +62,13 @@
   font-weight: 900;
   font-size: 18px;
   line-height: 1;
+  margin-right: auto;
 }
 
 .nav__links {
   display: flex;
   align-items: center;
+  margin: 0 auto;
 }
 
 .nav__links a {
@@ -147,17 +152,16 @@
 
 .nav__bagIcon_desktop {
   max-height: 24px;
-}
-
-.nav__bagIcon_mobile {
-  display: none;
+  margin-left: auto;
 }
 
 .nav_mobileButtons {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-  align-items: center;
+  display: none;
+}
+
+.nav__bagIcon_mobile {
+  display: block;
+  max-height: 24px;
 }
 
 @media screen and (max-width: 600px) {
@@ -189,8 +193,15 @@
     display: none;
   }
 
-  .nav__bagIcon_mobile {
-    display: block;
-    max-height: 24px;
+  .nav_mobileButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .nav__menu {
+    display: flex;
+    align-items: center;
   }
 }
