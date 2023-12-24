@@ -63,6 +63,7 @@
 
 .nav__links {
   display: flex;
+  align-items: center;
 }
 
 .nav__links a {
@@ -144,6 +145,21 @@
   margin-top: 0;
 }
 
+.nav__bagIcon_desktop {
+  max-height: 24px;
+}
+
+.nav__bagIcon_mobile {
+  display: none;
+}
+
+.nav_mobileButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+}
+
 @media screen and (max-width: 600px) {
   .nav__links {
     display: none;
@@ -167,5 +183,14 @@
 
   .mobileMenu_Active {
     margin-right: 20px;
+  }
+
+  .nav__bagIcon_desktop {
+    display: none;
+  }
+
+  .nav__bagIcon_mobile {
+    display: block;
+    max-height: 24px;
   }
 }
