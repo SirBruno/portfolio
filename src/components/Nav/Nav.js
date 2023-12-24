@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import axios from 'axios';
+import axios from 'axios'
 import './Nav.css'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
+import bagIcon from '../../assets/bag-icon.svg'
 
 function Nav() {
 
@@ -49,9 +50,13 @@ function Nav() {
           <Link to="/categories/men">Men</Link>
           <Link to="/categories/women">Women</Link>
         </div>
-        <div onClick={() => MobileMenuClick()} className="mobileMenu">
-          <div className="mobileMenu_bar1"></div>
-          <div className="mobileMenu_bar2"></div>
+        <img src={bagIcon} className="nav__bagIcon_desktop" alt="shopping bag" />
+        <div className="nav_mobileButtons">
+          <img src={bagIcon} className="nav__bagIcon_mobile" alt="shopping bag" />
+          <div onClick={() => MobileMenuClick()} className="mobileMenu">
+            <div className="mobileMenu_bar1"></div>
+            <div className="mobileMenu_bar2"></div>
+          </div>
         </div>
         <div className="mobileMenu_container">
           <Link onClick={() => MobileMenuClick()} to="/">Home</Link>
