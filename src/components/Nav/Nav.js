@@ -7,7 +7,8 @@ import bagIcon from '../../assets/bag-icon.svg'
 function Nav() {
 
   const [PRs, SetPRs] = useState(null);
-  const [mobileMenu, SetMobileMenu] = useState(true);
+  const [mobileMenu, SetMobileMenu] = useState(true)
+  const [cartItems, setCardItems] = useState(0)
 
   useEffect(() => {
     async function fetchData() {
@@ -50,7 +51,10 @@ function Nav() {
           <Link to="/categories/men">Men</Link>
           <Link to="/categories/women">Women</Link>
         </div>
-        <img src={bagIcon} className="nav__bagIcon_desktop" alt="shopping bag" />
+        <div className="nav__bagIcon_desktop">
+          <img src={bagIcon} alt="shopping bag" />
+          <span className='nav_bagItemNumber'>{cartItems}</span>
+        </div>
         <div className="nav_mobileButtons">
           <img src={bagIcon} className="nav__bagIcon_mobile" alt="shopping bag" />
           <div onClick={() => MobileMenuClick()} className="mobileMenu">
