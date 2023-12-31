@@ -153,6 +153,27 @@
 .nav__bagIcon_desktop {
   max-height: 24px;
   margin-left: auto;
+  position: relative;
+}
+
+.nav__bagIcon_desktop img {
+  max-height: 24px;
+}
+
+.nav_bagItemNumber {
+  right: -4px;
+  position: absolute;
+  background: red;
+  width: 16px;
+  height: 16px;
+  font-size: 12px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  color: white;
+  font-weight: 500;
 }
 
 .nav_mobileButtons {
