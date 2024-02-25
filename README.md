@@ -1,11 +1,12 @@
-# I swear to god I'm trying my best here
+# CUPCAKE 🧁
+_"Whatever matches your style"_
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Made with ❤️ and [React](https://react.dev/).
 
-![anime gif](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2lnMmR5bHlmdjhrdnkzdWZndW5rcmg3YWd3ZmtnMDJ3MHpsdDZjaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jAe22Ec5iICCk/giphy.gif)
+![anime gif](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZzV4M3k0N2M2Z3Iwbm1nbzZpbndpenJ0ODQ3aWNiOHJzNWJoc25hbCZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/4wp3eYvjcq5i7Agxg5/200.webp)
 
 ## About this project
-Cupcake is a pet project that I'm developing to try to learn React.
+Cupcake is a fictional **headless ecommerce** project that uses **React.js** as it's core technology.
 
 ## Where to find me
 
