@@ -42,10 +42,10 @@ function App() {
     return (
       <>
         <Hero />
-        <Products cat="men's clothing" />
-        <Products cat="women's clothing" />
-        <Products cat="jewelery" />
-        <Products cat="electronics" />
+        <Products cat="men's clothing" title="Featured" />
+        <Products cat="women's clothing" title="Women's clothing" />
+        <Products cat="jewelery" title="Jewelery" />
+        <Products cat="electronics" title="Electronics" />
       </>
     )
   }
