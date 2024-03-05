@@ -14,9 +14,9 @@
 .Products__Grid,
 .products_loader_container {
   display: grid;
-  grid-template-columns: repeat( auto-fit, minmax(240px, 1fr) );
+  grid-template-columns: repeat( auto-fit, minmax(320px, 1fr) );
   /* justify-content: space-between; */
-  column-gap: 24px;
+  column-gap: 16px;
   row-gap: 48px;
 }
 
@@ -36,11 +36,11 @@
 
 .Products__Image {
   display: block;
-  height: 240px;
-  object-fit: contain;
-  padding: 24px;
+  height: 400px;
+  object-fit: cover;
   background: #fff;
   margin-bottom: 16px;
+  width: 100%;
 }
 
 .Products__CardTitle {

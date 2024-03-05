@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import './Product.css'
+import prodImg from '../../assets/usama-akram-kP6knT7tjn4-unsplash.jpg'
 
 function Product(props) {
 
@@ -32,7 +33,7 @@ function Product(props) {
       </div>
       : products.filter(product => product.category === category).map(x =>
         <Link key={x.id} className="Products__Card" to={`product/${x.id}`}>
-          <img alt={x.title} src={x.image} className="Products__Image"></img>
+          <img alt={x.title} src={prodImg} className="Products__Image"></img>
           <span className="Products__CardTitle">{x.title}</span>
           <span className="Products__CardDescription">{x.category}</span>
           <div className="Products__PriceBox">
@@ -46,7 +47,7 @@ function Product(props) {
   return (
     <div className="Products">
       <div className="Products__Container">
-        <h3>{props.cat}</h3>
+        <h3>{props.title}</h3>
         <div className="Products__Grid">
           {filteredProducts(props.cat)}
         </div>
