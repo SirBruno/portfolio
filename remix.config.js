@@ -3,7 +3,8 @@ module.exports = {
   appDirectory: 'app',
   ignoredRouteFiles: ['**/.*'],
   watchPaths: ['./public', './.env'],
-  server: './server.js',
+  server:
+    process.env.NODE_ENV === 'development' ? './server-dev.ts' : './server.ts',
   /**
    * The following settings are required to deploy Hydrogen apps to Oxygen:
    */
@@ -16,9 +17,28 @@ module.exports = {
   serverModuleFormat: 'esm',
   serverPlatform: 'neutral',
   serverMinify: process.env.NODE_ENV === 'production',
+  postcss: true,
+  tailwind: true,
   future: {
     v3_fetcherPersist: true,
     v3_relativeSplatpath: true,
-    v3_throwAbortReason: true,
   },
+  serverNodeBuiltinsPolyfill: {
+    modules: {
+      buffer: true, // Provide a JSPM polyfill
+      fs: "empty", // Provide an empty polyfill
+      crypto: true,
+      zlib: true,
+      stream: true,
+      events: true,
+      https: true,
+      http: true,
+      net: true,
+      tls: true,
+      url: true
+    },
+    globals: {
+      Buffer: true,
+    },
+  }
 };
