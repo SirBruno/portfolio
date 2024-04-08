@@ -8,6 +8,7 @@ body {
 
 :root {
   --highlight-color: #D862BC;
+  --reg-spacing: 1rem;
 }
 
 img {
@@ -17,6 +18,10 @@ img {
 a {
   color: #000;
   text-decoration: none;
+}
+
+.section {
+  padding: 0 var(--reg-spacing);
 }
 
 /*
@@ -129,17 +134,16 @@ aside li {
   transform: translateX(calc(var(--aside-width) * -1));
 }
 
-/*
-* --------------------------------------------------
-* components/Header
-* --------------------------------------------------
-*/
+/* ################# */
+/* components/Header */
+/* ################# */
+
 .header {
   align-items: center;
   background: #fff;
   display: flex;
   height: var(--header-height);
-  padding: 0 1rem;
+  padding: var(--reg-spacing);
   position: sticky;
   top: 0;
   z-index: 1;
@@ -188,13 +192,12 @@ a:hover {
   transition: .3s;
 }
 
-/*
-* --------------------------------------------------
-* components/Footer
-* --------------------------------------------------
-*/
+/* ################# */
+/* components/Footer */
+/* ################# */
+
 .footer {
-  background: var(--color-dark);
+  background: #000;
   margin-top: auto;
 }
 
@@ -209,11 +212,10 @@ a:hover {
   color: var(--color-light);
 }
 
-/*
-* --------------------------------------------------
-* components/Cart
-* --------------------------------------------------
-*/
+/* ############### */
+/* components/Cart */
+/* ############### */
+
 .cart-main {
   height: 100%;
   max-height: calc(100vh - var(--cart-aside-summary-height));
@@ -263,11 +265,11 @@ a:hover {
   align-items: center;
   display: flex;
 }
-/*
-* --------------------------------------------------
-* components/Search
-* --------------------------------------------------
-*/
+
+/* ################# */
+/* components/Search */
+/* ################# */
+
 .predictive-search {
   height: calc(100vh - var(--header-height) - 40px);
   overflow-y: auto;
@@ -316,13 +318,10 @@ a:hover {
   gap: 1rem;
 }
 
+/* ############## */
+/* routes/__index */
+/* ############## */
 
-
-/*
-* --------------------------------------------------
-* routes/__index
-* --------------------------------------------------
-*/
 .featured-collection {
   display: block;
   margin-bottom: 2rem;
@@ -339,7 +338,7 @@ a:hover {
 }
 
 .featured-collection img {
-  height: auto;
+  height: 75vh;
   max-height: 100%;
   object-fit: cover;
 }
@@ -357,11 +356,26 @@ a:hover {
   height: auto;
 }
 
-/*
-* --------------------------------------------------
-* routes/collections._index.tsx
-* --------------------------------------------------
-*/
+.featured-collection {
+  position: relative;
+  display: flex;
+  justify-content:baseline;
+  align-items:end;
+}
+
+.featured-collection h1 {
+  position: absolute;
+  margin: 0;
+  padding: var(--reg-spacing);
+  text-transform: uppercase;
+  font-weight: 900 !important;
+  font-size: 3rem;
+}
+
+/* ############################# */
+/* routes/collections._index.tsx */
+/* ############################# */
+
 .collections-grid {
   display: grid;
   grid-gap: 1.5rem;
@@ -373,11 +387,10 @@ a:hover {
   height: auto;
 }
 
-/*
-* --------------------------------------------------
-* routes/collections.$handle.tsx
-* --------------------------------------------------
-*/
+/* ############################## */
+/* routes/collections.$handle.tsx */
+/* ############################## */
+
 .collection-description {
   margin-bottom: 1rem;
   max-width: 95%;
@@ -398,11 +411,10 @@ a:hover {
   width: 100%;
 }
 
-/*
-* --------------------------------------------------
-* routes/products.$handle.tsx
-* --------------------------------------------------
-*/
+/* ########################### */
+/* routes/products.$handle.tsx */
+/* ########################### */
+
 .product {
   display: grid;
   @media (min-width: 45em) {
@@ -445,11 +457,10 @@ a:hover {
   padding: 0.25rem 0.5rem;
 }
 
-/*
-* --------------------------------------------------
-* routes/blog._index.tsx
-* --------------------------------------------------
-*/
+/* ###################### */
+/* routes/blog._index.tsx */
+/* ###################### */
+
 .blog-grid {
   display: grid;
   grid-gap: 1.5rem;
@@ -466,21 +477,18 @@ a:hover {
   height: 100%;
 }
 
-/*
-* --------------------------------------------------
-* routes/blog.$articlehandle.tsx
-* --------------------------------------------------
-*/
+/* ############################## */
+/* routes/blog.$articlehandle.tsx */
+/* ############################## */
+
 .article img {
   height: auto;
   width: 100%;
 }
 
-/*
-* --------------------------------------------------
-* routes/account
-* --------------------------------------------------
-*/
+/* ############## */
+/* routes/account */
+/* ############## */
 
 .account-logout {
   display: inline-block;
