@@ -6,6 +6,7 @@
   --header-height: 64px;
   --color-dark: #000;
   --color-light: #fff;
+  --highlight-color: #D862BC;
 }
 
 img {
@@ -171,6 +172,16 @@ aside li {
   margin-left: auto;
 }
 
+header nav a {
+  transition: .3s;
+}
+
+header nav a:hover {
+  text-decoration: none;
+  color: var(--highlight-color) !important;
+  transition: .3s;
+}
+
 /*
 * --------------------------------------------------
 * components/Footer
@@ -314,6 +325,8 @@ aside li {
 
 .featured-collection-image {
   aspect-ratio: 1 / 1;
+  height: 75vh;
+  width: 100%;
   @media (min-width: 45em) {
     aspect-ratio: 16 / 9;
   }

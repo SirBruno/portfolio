@@ -39,15 +39,12 @@ export function links() {
   return [
     {rel: 'stylesheet', href: resetStyles},
     {rel: 'stylesheet', href: appStyles},
-    {
-      rel: 'preconnect',
-      href: 'https://cdn.shopify.com',
-    },
-    {
-      rel: 'preconnect',
-      href: 'https://shop.app',
-    },
+    {rel: 'preconnect', href: 'https://cdn.shopify.com'},
+    {rel: 'preconnect', href: 'https://shop.app'},
     {rel: 'icon', type: 'image/svg+xml', href: favicon},
+    {rel: 'preconnect', href: 'https://fonts.googleapis.com'},
+    {rel: 'preconnect', href: 'https://fonts.gstatic.com'},
+    {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap'}
   ];
 }
 
