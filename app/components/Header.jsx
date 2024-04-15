@@ -14,7 +14,7 @@ import logo from '../assets/cupcake-logo.svg'
 export function Header({ header, isLoggedIn, cart }) {
   const { shop, menu } = header;
   return (
-    <header className="header">
+    <header prefetch="intent" to="/" className="header">
       <section className="headerTop">
         <div>
           <strong>Cupcake</strong>
