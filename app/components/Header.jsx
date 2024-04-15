@@ -23,11 +23,11 @@ export function Header({ header, isLoggedIn, cart }) {
           </div>
         </div>
       </section>
-      {/* <section className="headerInner">
+      <section className="headerInner">
         <div>
-          <NavLink prefetch="intent" to="/" style={activeLinkStyle} end>
+          {/* <NavLink prefetch="intent" to="/" style={activeLinkStyle} end>
             <Image alt="cupcake logo" src={logo} width={32} />
-          </NavLink>
+          </NavLink> */}
           <HeaderMenu menu={menu} viewport="desktop" primaryDomainUrl={header.shop.primaryDomain.url} />
           <div className="header__search">
             <PredictiveSearchForm>
@@ -40,7 +40,7 @@ export function Header({ header, isLoggedIn, cart }) {
             <PredictiveSearchResults />
           </div>
         </div>
-      </section> */}
+      </section>
     </header>
   );
 }
