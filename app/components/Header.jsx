@@ -26,8 +26,7 @@ export function Header({ header, isLoggedIn, cart }) {
       <section className="headerInner">
         <div>
           <NavLink prefetch="intent" to="/" style={activeLinkStyle} end>
-            <Image alt="cupcake logo" src={logo} width={32} />
-            Cupcake
+            <img alt="cupcake logo" src={logo} width={32} />
           </NavLink>
           <HeaderMenu menu={menu} viewport="desktop" primaryDomainUrl={header.shop.primaryDomain.url} />
           <div className="header__search">
