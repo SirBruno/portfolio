@@ -1,4 +1,4 @@
-import { Await, NavLink } from '@remix-run/react';
+import { Await, NavLink, Link } from '@remix-run/react';
 import { Suspense } from 'react';
 import { useRootLoaderData } from '~/root';
 import { Image } from '@shopify/hydrogen'
@@ -25,9 +25,9 @@ export function Header({ header, isLoggedIn, cart }) {
       </section>
       <section className="headerInner">
         <div>
-          <NavLink to="/" end>
+          <Link to="/" end>
             <Image alt="cupcake logo" src={logo} width={32} />
-          </NavLink>
+          </Link>
           <HeaderMenu menu={menu} viewport="desktop" primaryDomainUrl={header.shop.primaryDomain.url} />
           <div className="header__search">
             <PredictiveSearchForm>
