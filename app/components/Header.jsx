@@ -14,36 +14,34 @@ import logo from '../assets/cupcake-logo.svg'
 export function Header({ header, isLoggedIn, cart }) {
   const { shop, menu } = header;
   return (
-    // <header className="header">
-    //   <section className="headerTop">
-    //     <div>
-    //       <strong>Cupcake</strong>
-    //       <div className="headerTop__items">
-    //         <HeaderCtas isLoggedIn={isLoggedIn} cart={cart} />
-    //       </div>
-    //     </div>
-    //   </section>
-    //   <section className="headerInner">
-    //     <div>
-    //       <NavLink prefetch="intent" to="/" style={activeLinkStyle} end>
-    //         <Image alt="cupcake logo" src={logo} width={32} />
-    //       </NavLink>
-    //       <HeaderMenu menu={menu} viewport="desktop" primaryDomainUrl={header.shop.primaryDomain.url} />
-    //       <div className="header__search">
-    //         <PredictiveSearchForm>
-    //           {({ fetchResults, inputRef }) => (
-    //             <div>
-    //               <input name="q" onChange={fetchResults} onFocus={fetchResults} placeholder="Search" ref={inputRef} type="search" />
-    //               {/* <button onClick={() => { window.location.href = inputRef?.current?.value ? `/search?q=${inputRef.current.value}` : `/search`; }}>Search</button> */}
-    //             </div>
-    //           )}
-    //         </PredictiveSearchForm>
-    //         <PredictiveSearchResults />
-    //       </div>
-    //     </div>
-    //   </section>
-    // </header>
-    null
+    <header className="header">
+      <section className="headerTop">
+        <div>
+          <strong>Cupcake</strong>
+          <div className="headerTop__items">
+            <HeaderCtas isLoggedIn={isLoggedIn} cart={cart} />
+          </div>
+        </div>
+      </section>
+      {/* <section className="headerInner">
+        <div>
+          <NavLink prefetch="intent" to="/" style={activeLinkStyle} end>
+            <Image alt="cupcake logo" src={logo} width={32} />
+          </NavLink>
+          <HeaderMenu menu={menu} viewport="desktop" primaryDomainUrl={header.shop.primaryDomain.url} />
+          <div className="header__search">
+            <PredictiveSearchForm>
+              {({ fetchResults, inputRef }) => (
+                <div>
+                  <input name="q" onChange={fetchResults} onFocus={fetchResults} placeholder="Search" ref={inputRef} type="search" />
+                </div>
+              )}
+            </PredictiveSearchForm>
+            <PredictiveSearchResults />
+          </div>
+        </div>
+      </section> */}
+    </header>
   );
 }
 
