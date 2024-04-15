@@ -6,7 +6,7 @@ import {
   PredictiveSearchForm,
   PredictiveSearchResults,
 } from '~/components/Search';
-import logo from '../assets/cupcake-logo.svg'
+import logo from '../../public/cupcake-logo.svg'
 
 /**
  * @param {HeaderProps}
@@ -26,7 +26,7 @@ export function Header({ header, isLoggedIn, cart }) {
       <section className="headerInner">
         <div>
           <NavLink prefetch="intent" to="/" style={activeLinkStyle} end>
-            {/* <Image alt="cupcake logo" src={logo} width={32} /> */}
+            <Image alt="cupcake logo" src={logo} width={32} />
             Cupcake
           </NavLink>
           <HeaderMenu menu={menu} viewport="desktop" primaryDomainUrl={header.shop.primaryDomain.url} />
