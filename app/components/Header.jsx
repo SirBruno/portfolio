@@ -26,8 +26,7 @@ export function Header({ header, isLoggedIn, cart }) {
       <section className="headerInner">
         <div>
           <Link to="/">
-            {/* <Image alt="cupcake logo" src={logo} width={32} /> */}
-            stuff
+            <Image alt="cupcake logo" src={logo} width={32} />
           </Link>
           <HeaderMenu menu={menu} viewport="desktop" primaryDomainUrl={header.shop.primaryDomain.url} />
           <div className="header__search">
