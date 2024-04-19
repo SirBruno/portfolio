@@ -1,18 +1,13 @@
-import {Await} from '@remix-run/react';
-import {Suspense} from 'react';
-import {Aside} from '~/components/Aside';
-import {Footer} from '~/components/Footer';
-import {Header, HeaderMenu} from '~/components/Header';
-import {CartMain} from '~/components/Cart';
-import {
-  PredictiveSearchForm,
-  PredictiveSearchResults,
-} from '~/components/Search';
+import { Await } from '@remix-run/react';
+import { Suspense } from 'react';
+import { Aside } from '~/components/Aside';
+import { Footer } from '~/components/Footer';
+import { Header, HeaderMenu } from '~/components/Header';
+import { CartMain } from '~/components/Cart';
+import { PredictiveSearchForm, PredictiveSearchResults, } from '~/components/Search';
 
-/**
- * @param {LayoutProps}
- */
-export function Layout({cart, children = null, footer, header, isLoggedIn}) {
+/** @param {LayoutProps} */
+export function Layout({ cart, children = null, footer, header, isLoggedIn }) {
   return (
     <>
       <CartAside cart={cart} />
@@ -29,10 +24,8 @@ export function Layout({cart, children = null, footer, header, isLoggedIn}) {
   );
 }
 
-/**
- * @param {{cart: LayoutProps['cart']}}
- */
-function CartAside({cart}) {
+/** @param {{cart: LayoutProps['cart']}} */
+function CartAside({ cart }) {
   return (
     <Aside id="cart-aside" heading="CART">
       <Suspense fallback={<p>Loading cart ...</p>}>
@@ -52,29 +45,15 @@ function SearchAside() {
       <div className="predictive-search">
         <br />
         <PredictiveSearchForm>
-          {({fetchResults, inputRef}) => (
+          {({ fetchResults, inputRef }) => (
             <div>
-              <input
-                name="q"
-                onChange={fetchResults}
-                onFocus={fetchResults}
-                placeholder="Search"
-                ref={inputRef}
-                type="search"
-              />
+              <input name="q" onChange={fetchResults} onFocus={fetchResults} placeholder="Search" ref={inputRef} type="search" />
               &nbsp;
-              <button
-                onClick={() => {
-                  window.location.href = inputRef?.current?.value
-                    ? `/search?q=${inputRef.current.value}`
-                    : `/search`;
-                }}
-              >
-                Search
-              </button>
+              <button onClick={() => { window.location.href = inputRef?.current?.value ? `/search?q=${inputRef.current.value}` : `/search`; }}>Search</button>
             </div>
           )}
         </PredictiveSearchForm>
+        {/* CSS for the search results here is missing */}
         <PredictiveSearchResults />
       </div>
     </Aside>
@@ -87,16 +66,12 @@ function SearchAside() {
  *   shop: HeaderQuery['shop'];
  * }}
  */
-function MobileMenuAside({menu, shop}) {
+function MobileMenuAside({ menu, shop }) {
   return (
     menu &&
     shop?.primaryDomain?.url && (
       <Aside id="mobile-menu-aside" heading="MENU">
-        <HeaderMenu
-          menu={menu}
-          viewport="mobile"
-          primaryDomainUrl={shop.primaryDomain.url}
-        />
+        <HeaderMenu menu={menu} viewport="mobile" primaryDomainUrl={shop.primaryDomain.url} />
       </Aside>
     )
   );

@@ -1,0 +1,154 @@
+main .home {
+  display: grid;
+}
+
+.recommended-products.section {
+  padding: 0;
+}
+
+.recommended-products.section h2 {
+  display: none;
+}
+
+.recommended-product {
+  position: relative;
+}
+
+.recommended-product h4 {
+  position: absolute;
+  top: 0;
+  padding: var(--reg-spacing);
+}
+
+.recommended-product small {
+  position: absolute;
+  top: 0;
+  padding: var(--reg-spacing);
+  left: 0;
+}
+
+.recommended-product img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.featured-collection {
+  position: relative;
+  display: flex;
+  justify-content:baseline;
+  align-items:end;
+  height: 600px;
+}
+
+.featured-collection h1 {
+  position: absolute;
+  margin: 0;
+  padding: var(--reg-spacing);
+  text-transform: uppercase;
+  font-weight: 900 !important;
+  font-size: 3rem;
+}
+
+.recommended-products-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.featured-collection-image {
+  width: 100%;
+  height: 100%;
+}
+
+.featured-collection-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  main .home {
+    display: block;
+  }
+
+  .featured-collection h1 {
+    font-size: 1rem;
+  }
+}
+
+/* Homepage Section */
+.homeSection .products-grid {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 12px;
+  row-gap: 40px;
+}
+
+.homeSection {
+  padding: 100px 1rem;
+  max-width: 1920px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.home__ctaContainer_title {
+  font-weight: 900;
+  margin: 0 0 24px;
+  margin: 0 0 16px;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 48px;
+}
+
+.home__ctaContainer_subTitle {
+  padding: 0;
+  margin: 0 0 40px;
+  font-size: 16px;
+}
+
+.home__ctaContainer_btn {
+  background: #000;
+  color: #fff;
+  border-radius: 100px;
+  padding: 10px 24px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.home__ctaContainer_btn:hover {
+  cursor: pointer;
+}
+
+/* CTA section */
+.home__ctaContainer {
+  padding: 40px 1rem 80px;
+  text-align: center;
+}
+
+/* Hero */
+.hero__squareThing {
+  border: 2px solid #000;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  height: 296px;
+  width: 296px;
+  border-radius: 16px;
+  background: url('../assets/shopify-background.webp');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+
+.hero__squareThing p {
+  padding: 0;
+  margin: 0;
+  color: #000;
+  font-weight: 500;
+  background: #fff;
+  border-radius: 100px;
+  margin: 1rem;
+  padding: 8px 16px;
+}

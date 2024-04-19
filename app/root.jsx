@@ -1,5 +1,5 @@
-import {useNonce} from '@shopify/hydrogen';
-import {defer} from '@shopify/remix-oxygen';
+import {useNonce} from '@shopify/hydrogen'
+import {defer} from '@shopify/remix-oxygen'
 import {
   Links,
   Meta,
@@ -11,10 +11,11 @@ import {
   useLoaderData,
   ScrollRestoration,
   isRouteErrorResponse,
-} from '@remix-run/react';
-import favicon from './assets/favicon.svg';
-import appStyles from './styles/app.css';
-import {Layout} from '~/components/Layout';
+} from '@remix-run/react'
+import favicon from './assets/favicon.svg'
+import appStyles from './styles/app.css'
+import {Layout} from '~/components/Layout'
+import _indexStyles from './styles/_index.css'
 
 /**
  * This is important to avoid re-fetching root queries on sub-navigations
@@ -37,6 +38,7 @@ export const shouldRevalidate = ({formMethod, currentUrl, nextUrl}) => {
 export function links() {
   return [
     {rel: 'stylesheet', href: appStyles},
+    {rel: 'stylesheet', href: _indexStyles},
     {rel: 'preconnect', href: 'https://cdn.shopify.com'},
     {rel: 'preconnect', href: 'https://shop.app'},
     {rel: 'icon', type: 'image/svg+xml', href: favicon},

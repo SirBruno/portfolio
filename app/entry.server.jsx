@@ -24,6 +24,10 @@ export default async function handleRequest(
       "'self'", // Default policy for valid sources for stylesheets: allow all content coming from origin (without subdomains).
       'https://fonts.googleapis.com' // Google Fonts.
     ],
+    defaultSrc: [
+      "'self'",
+      'https://www.tiktok.com'
+    ]
   });
 
   const body = await renderToReadableStream(

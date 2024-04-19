@@ -1,23 +1,46 @@
-import {Await, NavLink} from '@remix-run/react';
-import {Suspense} from 'react';
-import {useRootLoaderData} from '~/root';
+import { Await, NavLink } from '@remix-run/react';
+import { Suspense } from 'react';
+import { useRootLoaderData } from '~/root';
+import { Image } from '@shopify/hydrogen'
+import {
+  PredictiveSearchForm,
+  PredictiveSearchResults,
+} from '~/components/Search';
+import logo from '../../public/cupcake-logo.svg'
 
 /**
  * @param {HeaderProps}
  */
-export function Header({header, isLoggedIn, cart}) {
-  const {shop, menu} = header;
+export function Header({ header, isLoggedIn, cart }) {
+  const { shop, menu } = header;
   return (
     <header className="header">
-      <NavLink prefetch="intent" to="/" style={activeLinkStyle} end>
-        <strong>Cupcake</strong>
-      </NavLink>
-      <HeaderMenu
-        menu={menu}
-        viewport="desktop"
-        primaryDomainUrl={header.shop.primaryDomain.url}
-      />
-      <HeaderCtas isLoggedIn={isLoggedIn} cart={cart} />
+      <section className="headerTop">
+        <div>
+          <strong>Cupcake</strong>
+          <div className="headerTop__items">
+            <HeaderCtas isLoggedIn={isLoggedIn} cart={cart} />
+          </div>
+        </div>
+      </section>
+      <section className="headerInner">
+        <div>
+          <NavLink prefetch="intent" to="/" style={activeLinkStyle} end>
+            <img alt="cupcake logo" src={logo} width={32} />
+          </NavLink>
+          <HeaderMenu menu={menu} viewport="desktop" primaryDomainUrl={header.shop.primaryDomain.url} />
+          <div className="header__search">
+            <PredictiveSearchForm>
+              {({ fetchResults, inputRef }) => (
+                <div>
+                  <input name="q" onChange={fetchResults} onFocus={fetchResults} placeholder="Search" ref={inputRef} type="search" />
+                </div>
+              )}
+            </PredictiveSearchForm>
+            <PredictiveSearchResults />
+          </div>
+        </div>
+      </section>
     </header>
   );
 }
@@ -29,8 +52,8 @@ export function Header({header, isLoggedIn, cart}) {
  *   viewport: Viewport;
  * }}
  */
-export function HeaderMenu({menu, primaryDomainUrl, viewport}) {
-  const {publicStoreDomain} = useRootLoaderData();
+export function HeaderMenu({ menu, primaryDomainUrl, viewport }) {
+  const { publicStoreDomain } = useRootLoaderData();
   const className = `header-menu-${viewport}`;
 
   function closeAside(event) {
@@ -59,8 +82,8 @@ export function HeaderMenu({menu, primaryDomainUrl, viewport}) {
         // if the url is internal, we strip the domain
         const url =
           item.url.includes('myshopify.com') ||
-          item.url.includes(publicStoreDomain) ||
-          item.url.includes(primaryDomainUrl)
+            item.url.includes(publicStoreDomain) ||
+            item.url.includes(primaryDomainUrl)
             ? new URL(item.url).pathname
             : item.url;
         return (
@@ -84,7 +107,7 @@ export function HeaderMenu({menu, primaryDomainUrl, viewport}) {
 /**
  * @param {Pick<HeaderProps, 'isLoggedIn' | 'cart'>}
  */
-function HeaderCtas({isLoggedIn, cart}) {
+function HeaderCtas({ isLoggedIn, cart }) {
   return (
     <nav className="header-ctas" role="navigation">
       <HeaderMenuMobileToggle />
@@ -116,14 +139,14 @@ function SearchToggle() {
 /**
  * @param {{count: number}}
  */
-function CartBadge({count}) {
+function CartBadge({ count }) {
   return <a href="#cart-aside">Cart {count}</a>;
 }
 
 /**
  * @param {Pick<HeaderProps, 'cart'>}
  */
-function CartToggle({cart}) {
+function CartToggle({ cart }) {
   return (
     <Suspense fallback={<CartBadge count={0} />}>
       <Await resolve={cart}>
@@ -184,7 +207,7 @@ const FALLBACK_HEADER_MENU = {
  *   isPending: boolean;
  * }}
  */
-function activeLinkStyle({isActive, isPending}) {
+function activeLinkStyle({ isActive, isPending }) {
   return {
     fontWeight: isActive ? 'bold' : undefined,
     color: isPending ? 'grey' : 'black',
