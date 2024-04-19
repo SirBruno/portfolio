@@ -3,6 +3,9 @@ import { Await, useLoaderData, Link } from '@remix-run/react'
 import { Suspense } from 'react'
 import { Image, Money, Pagination, getPaginationVariables } from '@shopify/hydrogen'
 import { useVariantUrl } from '~/lib/variants'
+import img1 from "../assets/tiktok-img-1.jpg"
+import img2 from "../assets/tiktok-img-2.jpg"
+import img3 from "../assets/tiktok-img-3.jpg"
 
 /** @type {MetaFunction} */
 export const meta = () => {
@@ -34,6 +37,16 @@ export default function Homepage() {
           <h2 className="home__ctaContainer_title">Id luctus libero</h2>
           <p className="home__ctaContainer_subTitle">Sit egestas proin sed placerat mattis mauris.</p>
           <a className="home__ctaContainer_btn">Id elementum</a>
+        </section>
+        <section className="tiktokSection">
+          <div className="tiktokSection__container">
+            <h2>Cursus amet enim vestibulum tellus cras tellus.</h2>
+            <div className="tiktokSection__imgBox">
+              <img src={img1} />
+              <img src={img2} />
+              <img src={img3} />
+            </div>
+          </div>
         </section>
         <RecommendedProducts products={data.recommendedProducts} />
       </div>
@@ -88,7 +101,7 @@ function FeaturedCollection({ collection }) {
       )}
       <h1>{collection.title}</h1>
       <div className="hero__squareThing">
-        <p>Shopify + Hydrogen + 🥰</p>
+        <p>Shopify + Hydrogen</p>
       </div>
     </Link>
   )

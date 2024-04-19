@@ -522,3 +522,38 @@ a:hover {
 .account-logout {
   display: inline-block;
 }
+
+/* TIKTOK SECTION */
+.tiktokSection {
+  width: 100%;
+  max-width: 1160px;
+  padding: 1rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-bottom: 80px;
+}
+
+.tiktokSection h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.tiktokSection__imgBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  box-sizing: border-box;
+}
+
+.tiktokSection__imgBox img {
+  max-width: 100%;
+  border-radius: 10px;
+  transition: .3s;
+}
+
+.tiktokSection__imgBox img:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: .1s;
+  opacity: .9;
+}
