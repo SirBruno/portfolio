@@ -12,7 +12,7 @@ import {
   ScrollRestoration,
   isRouteErrorResponse,
 } from '@remix-run/react'
-import favicon from './assets/favicon.svg'
+import favicon from './assets/favicon.ico'
 import appStyles from './styles/app.css'
 import {Layout} from '~/components/Layout'
 import _indexStyles from './styles/_index.css'
@@ -41,7 +41,7 @@ export function links() {
     {rel: 'stylesheet', href: _indexStyles},
     {rel: 'preconnect', href: 'https://cdn.shopify.com'},
     {rel: 'preconnect', href: 'https://shop.app'},
-    {rel: 'icon', type: 'image/svg+xml', href: favicon},
+    {rel: 'icon', type: 'image/x-icon', href: favicon},
     {rel: 'preconnect', href: 'https://fonts.googleapis.com'},
     {rel: 'preconnect', href: 'https://fonts.gstatic.com'},
     {rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap'}
