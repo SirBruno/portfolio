@@ -53,6 +53,12 @@ main .home {
 .recommended-products-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  width: 100%;
+  max-width: 1160px;
+  padding: 1rem;
+  margin: 0 auto;
+  gap: 1rem;
+  box-sizing: border-box;
 }
 
 .featured-collection-image {
